@@ -35,60 +35,67 @@ export const logos = {
 
 // Enter your Personal Details here
 export const personalDetails = {
-  name: "Pavan MG",
-  tagline: "I build things for web",
+  name: "Abdullah Ahmad",
+  tagline: "Changing the web, 1 app at a time",
   img: profile,
-  about: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+  about: `A software engineer and aspiring full-stack developer. Hellbent on focusing and giving the best he can to his clients.`,
 };
 
 // Enter your Social Media URLs here
 export const socialMediaUrl = {
-  linkdein: "https://www.linkedin.com/",
-  github: "https://www.github.com/",
-  twitter: "https://twitter.com/",
+  linkdein: "https://www.linkedin.com/in/abdullah-ahmad-70b1bb13b/",
+  github: "https://github.com/AbdullahAhmadAAK",
+  twitter: "https://stackoverflow.com/users/19407338/abdullah-ahmad",
   instagram: "https://www.instagram.com/",
 };
 
 // Enter your Work Experience here
 export const workDetails = [
   {
-    Position: "Frontend Web Developer",
-    Company: `Company Name here`,
-    Location: "Bengaluru",
+    Position: "Software Engineer",
+    Company: `Dubizzle Labs`,
+    Location: "Lahore, Pakistan",
     Type: "Full Time",
-    Duration: "Sep 2021 - Dec 2021",
+    Duration: "Mar 2024 - May 2024",
   },
   {
-    Position: "Internship",
-    Company: `Company Name here`,
-    Location: "Bengaluru",
-    Type: "Internship",
-    Duration: "Sep 2021 - Dec 2021",
+    Position: "Associate Software Engineer",
+    Company: `Dubizzle Labs`,
+    Location: "Lahore, Pakistan",
+    Type: "Full Time",
+    Duration: "Sep 2023 - Mar 2024",
   },
   {
-    Position: "Internship",
-    Company: `Company Name here`,
-    Location: "Bengaluru",
+    Position: "Intern PHP Developer",
+    Company: `Suave Solutions`,
+    Location: "Lahore, Pakistan",
     Type: "Internship",
-    Duration: "Sep 2021 - Dec 2021",
+    Duration: "June 2023 - Sep 2023",
+  },
+  {
+    Position: "Software Engineering Intern",
+    Company: `Smart Technology House`,
+    Location: "Lahore, Pakistan",
+    Type: "Internship",
+    Duration: "Jun 2022 - Aug 2022",
   },
 ];
 
 // Enter your Education Details here
 export const eduDetails = [
   {
-    Position: "Frontend Development",
-    Company: "Udemy, YouTube, Google, Medium",
+    Position: "Full Stack Development",
+    Company: "University of Helsinki",
     Location: "Online",
-    Type: "Full Time",
-    Duration: "Jan 2022 - Present",
+    Type: "Online",
+    Duration: "Present - Present",
   },
   {
-    Position: "Bachelor in Electronics & Communication",
-    Company: `Your College Name here`,
-    Location: "Bengaluru",
+    Position: "Bachelor of Science in Computer Science",
+    Company: `Lahore University of Management Sciences`,
+    Location: "Lahore, Pakistan",
     Type: "Full Time",
-    Duration: "Aug 2020 - Present",
+    Duration: "Aug 2019 - June 2023",
   },
 ];
 
@@ -113,63 +120,33 @@ export const techStackDetails = {
 // Enter your Project Details here
 export const projectDetails = [
   {
-    title: "Project title 1",
+    title: "Dropella",
     image: projectImage1,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
+    description: `An app built to faciliate e-commerce specialists by providing them analytical tools.`,
+    techstack: "SvelteKit, Svelte, TypeScript, Supabase, Tailwind CSS",
+    previewLink: "https://dropella.vercel.app",
+    githubLink: "https://github.com/AbdullahAhmadAAK",
   },
   {
-    title: "Project title 2",
+    title: "LUMSafar",
     image: projectImage2,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
+    description: `An app built to faciliate socializing between students of Lahore University of Management Sciences.`,
     techstack: "HTML/CSS, JavaScript",
     previewLink: "https://google.com",
     githubLink: "https://github.com",
   },
   {
-    title: "Project title 3",
+    title: "Software House Management System",
     image: projectImage3,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
+    description: `An app built to help a software house manage everything within it, including projects, employees and tasks.`,
     techstack: "HTML/CSS, JavaScript",
     previewLink: "https://google.com",
     githubLink: "https://github.com",
-  },
-  {
-    title: "Project title 4",
-    image: projectImage4,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
-  },
-  {
-    title: "Project title 5",
-    image: projectImage5,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
-  },
-  {
-    title: "Project title 6",
-    image: projectImage6,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
-  },
+  }
 ];
 
 // Enter your Contact Details here
 export const contactDetails = {
-  email: "hi@example.com",
-  phone: "+91 12345 67890",
+  email: "abdullahaak06@gmail.com",
+  phone: "+92 331 4160816",
 };
