@@ -220,7 +220,7 @@ export const projectDetails = [
     image: a5bcProjectImage,
     description: `A passion project, built to showcase Askari 5 Badminton Club's (Lahore) details.`,
     techstack: "HTML, CSS, JavaScript, SASS",
-    previewLink: "https://a5bc-club.surge.sh/",
+    previewLink: "https://askari-5-badminton-club.vercel.app/",
     githubLink: "https://github.com/AbdullahAhmadAAK/a5bc-club",
   },
 
