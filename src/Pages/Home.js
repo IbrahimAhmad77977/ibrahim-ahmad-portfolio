@@ -1,12 +1,23 @@
 import React, { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { personalDetails } from "../Details";
+import resumePdf from '../assets/resumes/Abdullah Ahmad - Resume - 2024.pdf';
 
 function Home() {
+  
   const { name, tagline, img } = personalDetails;
+
+  const downloadResume = () => {
+    const link = document.createElement('a');
+    link.href = resumePdf; // Replace with the correct path
+    link.download = 'Abdullah Ahmad - Resume - 2024.pdf'; // The name of the file once downloaded
+    link.click();
+  };
+
   const h11 = useRef();
   const h12 = useRef();
   const h13 = useRef();
+  const h14 = useRef();
   const myimageref = useRef();
   useEffect(() => {
     const tl = gsap.timeline();
@@ -34,6 +45,17 @@ function Home() {
       )
       .from(
         h13.current,
+        {
+          x: "-100%",
+          delay: 0.1,
+          opacity: 0,
+          duration: 2,
+          ease: "Power3.easeOut",
+        },
+        "<"
+      )
+      .from(
+        h14.current,
         {
           x: "-100%",
           delay: 0.1,
@@ -77,9 +99,37 @@ function Home() {
         >
           {tagline}
         </h2>
+
+        {/* TODO: could use another React component for this */}
+        <button 
+          ref={h14}
+          onClick={downloadResume} 
+          className="bg-green-500 hover:bg-green-700 text-white font-bold mt-4 py-2 px-4 rounded inline-flex items-center"
+        >
+          <span>Download Resume</span>
+          <svg 
+            className="w-4 h-4 ml-2" 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24" 
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path 
+              strokeLinecap="round" 
+              strokeLinejoin="round" 
+              strokeWidth="2" 
+              d="M4 12l1.41-1.41L11 16.17V4h2v12.17l5.59-5.59L20 12l-8 8-8-8z"
+            ></path>
+          </svg>
+        </button>
+
+
+
+
+
       </div>
       <div className="mt-5 md:mt-0">
-        <img ref={myimageref} className="w-1/2 md:ml-auto" src={img} alt="Pavan MG" />
+        <img ref={myimageref} className="w-3/4 md:ml-auto rounded-full border-2" src={img} alt="Abdullah Ahmad" />
       </div>
     </main>
   );
