@@ -58,6 +58,7 @@ import lumsafarProjectImage from "./assets/projects/lumsafarImage.png"
 import a5bcProjectImage from "./assets/projects/a5bcImage.png"
 // import softwareHouseProjectImage from "./assets/projects/softwareHouseImage"
 import highwayRacersProjectImage from "./assets/projects/highwayRacersImage.jpg"
+import breakoutsAndSetupsProjectImage from "./assets/projects/breakoutSetupsImage.png"
 
 // Education images
 import helsinkiLogo from "./assets/education/helsinki-logo.png"
@@ -200,16 +201,25 @@ export const projectDetails = [
   {
     title: "Dropella",
     image: dropellaProjectImage,
-    description: `An app built to faciliate e-commerce specialists by providing them analytical tools.`,
+    description: `A web app built to faciliate e-commerce specialists by providing them precise analytical tools.`,
     techstack: "SvelteKit, Svelte, TypeScript, JavaScript, Supabase, Tailwind CSS",
     previewLink: "https://dropella.vercel.app",
+    githubLink: null,
+  },
+
+  {
+    title: "Breakouts and Setups",
+    image: breakoutsAndSetupsProjectImage,
+    description: `A web app built to guide those interested in stocks, by providing in-depth analysis with real-time market conditions.`,
+    techstack: "Node.js, React.js, Firebase, Tailwind CSS",
+    previewLink: "https://dashboard.breakoutsandsetups.com",
     githubLink: null,
   },
   
   {
     title: "LUMSafar",
     image: lumsafarProjectImage,
-    description: `An app built to faciliate socializing between students of Lahore University of Management Sciences.`,
+    description: `A mobile app built to faciliate socializing between students of Lahore University of Management Sciences.`,
     techstack: "React.js, TypeScript, JavaScript, Node.js, MongoDB",
     previewLink: null,
     githubLink: "https://github.com/AhsanSarwar45/LUMSafar",
@@ -218,7 +228,7 @@ export const projectDetails = [
   {
     title: "Askari 5 Badminton Club",
     image: a5bcProjectImage,
-    description: `A passion project, built to showcase Askari 5 Badminton Club's (Lahore) details.`,
+    description: `A passion project and a web app, built to showcase Askari 5 Badminton Club's (Lahore) details.`,
     techstack: "HTML, CSS, JavaScript, SASS",
     previewLink: "https://askari-5-badminton-club.vercel.app/",
     githubLink: "https://github.com/AbdullahAhmadAAK/a5bc-club",
@@ -227,7 +237,7 @@ export const projectDetails = [
   {
     title: "Software House Management System",
     image: projectImage3,
-    description: `An app built to help a software house manage everything within it, including projects, employees and tasks.`,
+    description: `A purely functional web app built to help a software house manage everything within it, including projects, employees and tasks.`,
     techstack: "React.js, Express, Node.js, MySQL",
     previewLink: null,
     githubLink: "https://github.com/raffayatiq/Software-House-Management-System",
@@ -236,7 +246,7 @@ export const projectDetails = [
   {
     title: "Highway Racers",
     image: highwayRacersProjectImage,
-    description: `An endless runner Android-based game, in which the rider has to avoid obstacles, collect coins and just keep riding until his bike is destroyed by collisions.`,
+    description: `An Android-based endless runner game, in which the rider has to avoid obstacles, collect coins and just keep riding until his bike is destroyed by collisions.`,
     techstack: "Unity 3D, C#",
     previewLink: null,
     githubLink: "https://github.com/ammantariq41/p01-highway_racers_2",
