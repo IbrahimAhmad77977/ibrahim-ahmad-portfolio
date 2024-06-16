@@ -1,7 +1,7 @@
 // Enter all your detials in this file
 // Logo images
-import logogradient from "./assets/logo.svg";
-import logo from "./assets/logo2.svg";
+import logogradient from "./assets/logos/aak_tech_logo_light.png";
+import logo from "./assets/logos/aak_tech_logo_light.png";
 // Profile Image
 import profile from "./assets/profile.jpg";
 // Tech stack images
