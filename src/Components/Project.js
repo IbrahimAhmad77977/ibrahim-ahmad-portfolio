@@ -2,13 +2,26 @@ import React from "react";
 
 function Project({ title, image, description, techstack, previewLink, githubLink }) {
   return (
-    <article className="rounded-xl mt-10 overflow-hidden shadow-xl shadow-slate-300 dark:shadow-slate-900">
-      <img src={image} alt="" loading="lazy" />
+    <article className="rounded-xl mt-10 overflow-hidden shadow-xl shadow-slate-300 dark:shadow-slate-900 border-4 group border-blue-800 hover:bg-blue-200">
+      <div className="relative w-full h-60 overflow-hidden bg-blue-200 border-b-4 border-b-blue-500">
+        <div className="absolute inset-0 bg-gray-700 opacity-50 hidden group-hover:block"></div>
+        <div className="absolute z-20 w-full h-full group-hover:flex hidden items-center justify-center">
+          <div 
+            className="w-32 h-10 group-hover:flex items-center justify-center hidden bg-blue-400 text-black hover:cursor-pointer hover:bg-blue-500"
+            onClick={() => console.log('TODO: OPEN THE MODAL!')}
+          >
+            Contributions
+          </div>
+        </div>
+        <img src={image} alt="" loading="lazy" />
+        
+      </div>
+      
       <div className="dark:bg-dark-card p-4">
         <h1 className="dark:text-light-heading font-semibold text-lg pt-1">{title}</h1>
         <p className="text-content pt-4 font-light">{description}</p>
         <h3 className="text-dark-heading dark:text-light-heading font-medium pt-4">
-          Technologies : <span className="font-light">{techstack}</span>
+          Technologies: <span className="font-light">{techstack}</span>
         </h3>
         <div className="flex justify-between items-center mt-5">
           {/* TODO: MODULAR! */}

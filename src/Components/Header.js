@@ -35,29 +35,29 @@ function Header() {
       </div>
       <nav className={` ${!isOpen ? "hidden" : null} text-center md:flex justify-between`}>
         <ul className="dark:text-light-content font-medium md:flex items-center md:space-x-5 md:mr-10">
-          <li className="pb-1 md:pb-0">
+          <li className="flex flex-col justify-center h-1/2 pb-1 md:pb-0 px-2 hover:bg-blue-200">
             <NavLink to="/" onClick={toggleClass}>
-              Home
+              <span>Home</span>
             </NavLink>
           </li>
-          <li className="pb-1 md:pb-0">
+          <li className="flex flex-col justify-center h-1/2 pb-1 md:pb-0 px-2 hover:bg-blue-200">
             <NavLink to="/about" onClick={toggleClass}>
-              About
+              <span>About</span>
             </NavLink>
           </li>
-          <li className="pb-1 md:pb-0">
+          <li className="flex flex-col justify-center h-1/2 pb-1 md:pb-0 px-2 hover:bg-blue-200">
             <NavLink to="/technologies" onClick={toggleClass}>
-              Technologies
+              <span>Technologies</span>
             </NavLink>
           </li>
-          <li className="pb-1 md:pb-0">
+          <li className="flex flex-col justify-center h-1/2 pb-1 md:pb-0 px-2 hover:bg-blue-200">
             <NavLink to="/projects" onClick={toggleClass}>
-              Projects
+              <span>Projects</span>
             </NavLink>
           </li>
-          <li>
+          <li className="flex flex-col justify-center h-1/2 px-2 hover:bg-blue-200">
             <NavLink to="/contact" onClick={toggleClass}>
-              Contact
+              <span>Contact</span>
             </NavLink>
           </li>
         </ul>
@@ -80,7 +80,7 @@ function Header() {
           <li>
             <a href={linkdein} target="_blank" rel="noreferrer noopener">
               <svg
-                className="dark:fill-light-heading fill-dark-heading"
+                className="dark:fill-light-heading fill-dark-heading hover:bg-blue-200 rounded-full transition duration-300 hover:scale-[1.1]"
                 width="30"
                 height="30"
                 viewBox="0 0 30 30"
@@ -94,7 +94,7 @@ function Header() {
           <li>
             <a href={github} target="_blank" rel="noreferrer noopener">
               <svg
-                className="dark:fill-light-heading fill-dark-heading"
+                className="dark:fill-light-heading fill-dark-heading hover:bg-blue-200 rounded-full transition duration-300 hover:scale-[1.1]"
                 width="30"
                 height="30"
                 viewBox="0 0 30 30"

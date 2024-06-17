@@ -220,7 +220,7 @@ export const projectDetails = [
     title: "LUMSafar",
     image: lumsafarProjectImage,
     description: `A mobile app built to faciliate socializing between students of Lahore University of Management Sciences.`,
-    techstack: "React.js, TypeScript, JavaScript, Node.js, MongoDB",
+    techstack: "React Native, TypeScript, JavaScript, Node.js, MongoDB",
     previewLink: null,
     githubLink: "https://github.com/AhsanSarwar45/LUMSafar",
   },

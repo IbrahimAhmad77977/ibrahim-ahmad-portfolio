@@ -38,6 +38,9 @@ function Technologies() {
     notion,
     vercel
   } = techStackDetails;
+
+  const iconContainerStyle = "transition duration-200 hover:scale-110"
+
   return (
     <main className="container mx-auto max-width pt-10 pb-20 ">
       <section className="mb-6">
@@ -69,39 +72,39 @@ function Technologies() {
       </section>
 
       <section className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-6 items-center gap-10 pt-6 mb-6">
-        <div>
+        <div className={iconContainerStyle}>
           <img src={rails} title="Ruby on Rails" alt="" />
         </div>
 
-        <div>
+        <div className={iconContainerStyle}>
           <img src={nodejs} title="Node.js" alt="" />
         </div>
 
-        <div>
+        <div className={iconContainerStyle}>
           <img src={express} title="Express" alt="" />
         </div>
 
-        <div>
+        <div className={iconContainerStyle}>
           <img src={php} title="PHP" alt="" />
         </div>
 
-        <div>
+        <div className={iconContainerStyle}>
           <img src={python} title="Python" alt="" />
         </div>
 
-        <div>
+        <div className={iconContainerStyle}>
           <img src={mysql} title="MySQL" alt="" />
         </div>
 
-        <div>
+        <div className={iconContainerStyle}>
           <img src={postgresql} title="PostgreSQL" alt="" />
         </div>
 
-        <div>
+        <div className={iconContainerStyle}>
           <img src={supabase} title="Supabase" alt="" />
         </div>
 
-        <div>
+        <div className={iconContainerStyle}>
           <img src={sql} title="SQL" alt="" />
         </div>
         
@@ -114,27 +117,27 @@ function Technologies() {
       </section>
 
       <section className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-6 items-center gap-10 pt-6 mb-6">
-        <div>
+        <div className={iconContainerStyle}>
           <img src={react} title="React.js" alt="" />
         </div>
 
-        <div>
+        <div className={iconContainerStyle}>
           <img src={sveltekit} title="SvelteKit" alt="" />
         </div>
 
-        <div>
+        <div className={iconContainerStyle}>
           <img src={jquery} title="jQuery" alt="" />
         </div>
 
-        <div>
+        <div className={iconContainerStyle}>
           <img src={html} title="HTML" alt="" />
         </div>
 
-        <div>
+        <div className={iconContainerStyle}>
           <img src={css} title="CSS" alt="" />
         </div>
 
-        <div>
+        <div className={iconContainerStyle}>
           <img src={sass} title="SASS" alt="" />
         </div>
 
@@ -147,31 +150,31 @@ function Technologies() {
       </section>
 
       <section className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-6 items-center gap-10 pt-6 mb-6">
-        <div>
+        <div className={iconContainerStyle}>
           <img src={js} title="JavaScript" alt="" />
         </div>
 
-        <div>
+        <div className={iconContainerStyle}>
           <img src={ts} title="TypeScript" alt="" />
         </div>
 
-        <div>
+        <div className={iconContainerStyle}>
           <img src={tailwind} title="Tailwind" alt="" />
         </div>
 
-        <div>
+        <div className={iconContainerStyle}>
           <img src={bootstrap} title="Bootstrap" alt="" />
         </div>
 
-        <div>
+        <div className={iconContainerStyle}>
           <img src={git} title="Git" alt="" />
         </div>
 
-        <div>
+        <div className={iconContainerStyle}>
           <img src={github} title="GitHub" alt="" />
         </div>
 
-        <div>
+        <div className={iconContainerStyle}>
           <img src={gitkraken} title="Git Kraken" alt="" />
         </div>
       </section>
@@ -183,31 +186,31 @@ function Technologies() {
       </section>
 
       <section className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-6 items-center gap-10 pt-6 mb-6">
-        <div>
+        <div className={iconContainerStyle}>
           <img src={aws} title="AWS" alt="" />
         </div>
 
-        <div>
+        <div className={iconContainerStyle}>
           <img src={vercel} title="Vercel" alt="" />
         </div>
 
-        <div>
+        <div className={iconContainerStyle}>
           <img src={redis} title="Redis" alt="" />
         </div>
 
-        <div>
+        <div className={iconContainerStyle}>
           <img src={daisyui} title="Daisy UI" alt="" />
         </div>
 
-        <div>
+        <div className={iconContainerStyle}>
           <img src={newrelic} title="New Relic" alt="" />
         </div>
 
-        <div>
+        <div className={iconContainerStyle}>
           <img src={jira} title="Jira" alt="" />
         </div>
 
-        <div>
+        <div className={iconContainerStyle}>
           <img src={notion} title="Notion" alt="" />
         </div>
         

@@ -10,14 +10,14 @@ function Work({ position, company, location, type, duration, link, logo, transcr
   };
 
   return (
-    <article className="pt-8 border-b-2 border-dark-content pb-5 dark:border-light-content border-opacity-20 dark:border-opacity-20">
+    <article className="pt-8 border-b-2 hover:bg-blue-200 pr-4 border-dark-content pb-5 dark:border-light-content border-opacity-20 dark:border-opacity-20">
       
       <div className="flex justify-start gap-4">
 
         {/* TODO: Have more details shown to user about each position!  */}
         {/* <img src={logo} alt="Logo">121</img> */}
 
-        <img src={logo} className="w-16 h-16 border-2"></img>
+        <img src={logo} className="w-16 h-16 border-2 ml-4"></img>
 
         <div className="w-full">
          
