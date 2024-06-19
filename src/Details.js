@@ -205,15 +205,27 @@ export const projectDetails = [
     techstack: "SvelteKit, Svelte, TypeScript, JavaScript, Supabase, Stripe, Tailwind CSS",
     previewLink: "https://dropella.vercel.app",
     githubLink: null,
+    contributions: [
+      'Led and mentored 10 front-end developers, fostering collaboration with designers and back-end developers to deliver efficient and cohesive project development.',
+      'Integrated 25+ products, stores, and ads APIs, ensuring precise real-time analytics and enhancing overall app functionality.',
+      "Integrated OpenAI's ChatGPT-3M6 to provide intelligent data insights, where API data was insufficient, leading to a more fulfilling user experience.",
+      'Utilized Tailwind and Daisy UI to craft a pixel-perfect, responsive UI, achieving a 95% Figma design fidelity for a user-friendly app interface.',
+      ' Implemented internal store tracking for sales’ listings and details pages, maintaining data integrity and accuracy per client requirements.'
+    ]
   },
 
   {
     title: "Breakouts and Setups",
     image: breakoutsAndSetupsProjectImage,
     description: `A web app built to guide those interested in stocks, by providing in-depth analysis with real-time market conditions.`,
-    techstack: "Node.js, React.js, Firebase, Stripe, Tailwind CSS",
+    techstack: "Node.js, MongoDB, React.js, Firebase, Stripe, Tailwind CSS",
     previewLink: "https://dashboard.breakoutsandsetups.com",
     githubLink: null,
+    contributions: [
+      'Implemented several analytical features into the dashboard app, such as tables, and custom filters.',
+      'Performed comprehensive testing of the entire app and fixed resulting bugs.',
+      "Reworked the app's design to be more responsive and interactive with users"
+    ]
   },
   
   {
@@ -223,6 +235,11 @@ export const projectDetails = [
     techstack: "React Native, TypeScript, JavaScript, Node.js, MongoDB",
     previewLink: null,
     githubLink: "https://github.com/AhsanSarwar45/LUMSafar",
+    contributions: [
+      "Contributed to backend for editing profile and searching by fixing errors in code.",
+      "Majorly worked in documenting proposal document, SRS, and SDS.",
+      "Conducted usability testing of the app."
+    ]
   },
 
   {
@@ -232,6 +249,10 @@ export const projectDetails = [
     techstack: "HTML, CSS, JavaScript, SASS",
     previewLink: "https://askari-5-badminton-club.vercel.app/",
     githubLink: "https://github.com/AbdullahAhmadAAK/a5bc-club",
+    contributions: [
+      "Showcased relevant information for the club in a page, customizing another template.",
+      "Made the template responsive and unique so that it would look better for a badminton club's website."
+    ]
   },
 
   {
@@ -241,6 +262,10 @@ export const projectDetails = [
     techstack: "React.js, Express, Node.js, MySQL",
     previewLink: null,
     githubLink: "https://github.com/raffayatiq/Software-House-Management-System",
+    contributions: [
+      "Developed frontend and backend for login, privilege levels, creating employee reviews and viewing employees' data.",
+
+    ]
   },
 
   {
@@ -250,6 +275,13 @@ export const projectDetails = [
     techstack: "Unity 3D, C#",
     previewLink: null,
     githubLink: "https://github.com/ammantariq41/p01-highway_racers_2",
+    contributions: [
+      "Led and managed a team of 5 developers, delegating tasks and ensuring team cohesion.",
+      "Developed various game features in it,such as infinite path generation, bike movement and bike aesthetics.",
+      "Contributed to the game's UI by creating aesthetic start and end screens.",
+      "Wrote and maintained 80+ % of the documentation.",
+      "Researched into game development resources - “The Art of Game Design” and a game development YouTube playlist by Mindstorm Studios."
+    ]
   }
 ];
 
