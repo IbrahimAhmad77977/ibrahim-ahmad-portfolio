@@ -1,6 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 
-function Work({ position, company, location, type, duration, link, logo, transcript }) {
+function Work({ position, company, location, type, duration, link, logo, transcript, contributions }) {
+
+  console.log('These r contirbutinso: ', contributions)
+  const [showMoreStatus, setShowMoreStatus] = useState(false)
+
+  const showMore = () => {
+    setShowMoreStatus(true)
+  }
+
+  const showLess = () => {
+    setShowMoreStatus(false)
+  }
 
   const downloadTranscript = () => {
     const link = document.createElement('a');
@@ -10,8 +21,13 @@ function Work({ position, company, location, type, duration, link, logo, transcr
   };
 
   return (
-    <article className="pt-8 border-b-2 hover:bg-blue-200 pr-4 border-dark-content pb-5 dark:border-light-content border-opacity-20 dark:border-opacity-20">
-      
+    <article
+      className="pt-8 border-b-2 hover:bg-blue-200 pr-4 border-dark-content pb-5 dark:border-light-content 
+                border-opacity-20 dark:border-opacity-20"
+      onMouseEnter={showMore}
+      onMouseLeave={showLess}
+    >
+
       <div className="flex justify-start gap-4">
 
         {/* TODO: Have more details shown to user about each position!  */}
@@ -20,8 +36,8 @@ function Work({ position, company, location, type, duration, link, logo, transcr
         <img src={logo} className="w-16 h-16 border-2 ml-4"></img>
 
         <div className="w-full">
-         
-         
+
+
           <div className="flex justify-between items-center">
             <h1 className="text-content md:text-lg lg:text-xl">{position}</h1>
             <div className="btn bg-greenbg text-green-text text-xs inline-block rounded-3xl px-3 py-1 min-w-fit">
@@ -42,10 +58,10 @@ function Work({ position, company, location, type, duration, link, logo, transcr
                 >
                   <path d="M3.33331 1.5V10.5H7.33331V8.75H8.66665V10.5H12.6666V1.5H3.33331ZM4.66665 2.5H5.99998V3.5H4.66665V2.5ZM7.33331 2.5H8.66665V3.5H7.33331V2.5ZM9.99998 2.5H11.3333V3.5H9.99998V2.5ZM4.66665 4.5H5.99998V5.5H4.66665V4.5ZM7.33331 4.5H8.66665V5.5H7.33331V4.5ZM9.99998 4.5H11.3333V5.5H9.99998V4.5ZM4.66665 6.5H5.99998V7.5H4.66665V6.5ZM7.33331 6.5H8.66665V7.5H7.33331V6.5ZM9.99998 6.5H11.3333V7.5H9.99998V6.5ZM4.66665 8.5H5.99998V9.5H4.66665V8.5ZM9.99998 8.5H11.3333V9.5H9.99998V8.5Z" />
                 </svg>
-                <p 
-                  className="text-content text-xs md:text-sm font-light pl-1 hover:cursor-pointer" 
+                <p
+                  className="text-content text-xs md:text-sm font-light pl-1 hover:cursor-pointer"
                   onClick={() => window.open(link, '_blank')}>
-                    {company}
+                  {company}
                 </p>
               </div>
               <div className="flex items-center">
@@ -73,15 +89,32 @@ function Work({ position, company, location, type, duration, link, logo, transcr
               >
                 Download Transcript
               </button>
-            ) : null}        
+            ) : null}
 
             <p className="text-content text-xs md:text-sm font-light pl-1 min-w-fit">{duration}</p>
           </div>
 
         </div>
       </div>
-      
-      
+
+      {showMoreStatus && contributions?.length > 0 && (
+        <div className="flex justify-start">
+          <div className="w-16 h-16 ml-8"></div>
+          <div>
+            <h4 className="underline my-2">My Contributions:</h4>
+            <ol>
+              {contributions.map(contribution => (
+                <li className="list-decimal ml-8 mb-1">
+                  {contribution}
+                </li>
+              ))}
+            </ol>
+          </div>
+
+        </div>
+      )}
+
+
     </article>
   );
 }

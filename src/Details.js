@@ -104,7 +104,13 @@ export const workDetails = [
     Type: "Full Time",
     Duration: "Mar 2024 - May 2024",
     Link: "https://www.linkedin.com/company/dubizzlelabs/",
-    Logo: dubizzleLogo
+    Logo: dubizzleLogo,
+    Contributions: [
+      "Implemented Redis-based shopping cart functionality on Seller Center, optimizing performance by 40%.",
+      "Developed and integrated a secure checkout process on Seller Center with 3-D Secure and non-3-D Secure payments using Checkout, enabling seamless order finalization and online payment processing.",
+      "Implemented image uploading to AWS S3 buckets for product listings via presigned URLs, enhancing storage efficiency and security.",
+      "Automated expiring credits’ and monthly credits utilization, following complex criteria to maximize credit efficiency on Zameen.com."
+    ]
   },
   {
     Position: "Associate Software Engineer",
@@ -113,7 +119,13 @@ export const workDetails = [
     Type: "Full Time",
     Duration: "Sep 2023 - Mar 2024",
     Link: "https://www.linkedin.com/company/dubizzlelabs/",
-    Logo: dubizzleLogo
+    Logo: dubizzleLogo,
+    Contributions: [
+      "Spearheaded the development of a scalable invitation system for agencies for Bayut.com, integrating OTPs and shortened redirecting URLs to streamline user engagement and communication processes.",
+      "Led the successful integration of user verification from Saudi Arabia’s REGA system’s licenses into Bayut.com, empowering 60,000+ users with enhanced permissions and fostering trust within the community.",
+      "Pioneered the implementation of an automated renewal system for listings, optimizing efficiency and management for agencies, contributing to increased user satisfaction and retention.",
+      "Migrated user messages from the legacy implementation to the Mailboxer system on Zameen.com, improving communication infrastructure."
+    ]
   },
   {
     Position: "Intern PHP Developer",
@@ -122,7 +134,11 @@ export const workDetails = [
     Type: "Internship",
     Duration: "Jun 2023 - Sep 2023",
     Link: "https://www.linkedin.com/company/suave-solutions/",
-    Logo: suaveLogo
+    Logo: suaveLogo,
+    Contributions: [
+      "Transformed the company’s portal through the development of several admin panel features, elevating user experience by implementing intuitive interfaces, enhancing data visualization, and optimizing performance.",
+      "Streamlined system operations through the successful implementation of CRON files, enabling automated execution of essential tasks with precision."
+    ]
   },
   {
     Position: "Software Engineering Intern",
@@ -131,7 +147,12 @@ export const workDetails = [
     Type: "Internship",
     Duration: "Jun 2022 - Aug 2022",
     Link: "https://www.linkedin.com/company/smart-technology-house/",
-    Logo: sthLogo
+    Logo: sthLogo,
+    Contributions: [
+      "Gained design proficiency by coding HTML/CSS, transforming designs into functional interfaces. Enhanced styling efficiency and interactivity by utilizing SASS, SCSS, and jQuery, resulting in streamlined design workflows and dynamic user experiences. ",
+      "Facilitated seamless user experiences and visual consistency by accurately translating complex PSD designs into meticulously crafted HTML/CSS implementations.",
+      "Independently developed a comprehensive CRUD system for employees, leveraging PHP 8.0 to enhance data management capabilities."
+    ]
   },
 ];
 
