@@ -23,12 +23,12 @@ function Work({ position, company, location, type, duration, link, logo, transcr
   return (
     <article
       className="pt-8 border-b-2 hover:bg-blue-200 pr-4 border-dark-content pb-5 dark:border-light-content 
-                border-opacity-20 dark:border-opacity-20"
+                border-opacity-20 dark:border-opacity-20 accordion"
       onMouseEnter={showMore}
       onMouseLeave={showLess}
     >
 
-      <div className="flex justify-start gap-4">
+      <div className="flex justify-start gap-4 accordion-toggle">
 
         {/* TODO: Have more details shown to user about each position!  */}
         {/* <img src={logo} alt="Logo">121</img> */}
@@ -99,17 +99,22 @@ function Work({ position, company, location, type, duration, link, logo, transcr
 
       {/* {showMoreStatus && contributions?.length > 0 && ( */}
 
-        <div className={`flex justify-start overflow-hidden ${showMoreStatus ? 'h-full' : 'h-0'}`}>
+        <div className={`flex justify-start overflow-hidden accordion-content`}>
           <div className="w-16 h-16 ml-8"></div>
           <div>
-            <h4 className="underline my-2">My Contributions:</h4>
-            <ol>
-              {contributions?.length > 0 && contributions.map(contribution => (
-                <li className="list-decimal ml-8 mb-1">
-                  {contribution}
-                </li>
-              ))}
-            </ol>
+            {contributions?.length > 0 && (
+              <>
+                <h4 className="underline my-2">My Contributions:</h4>
+                <ol>
+                  {contributions.map(contribution => (
+                    <li className="list-decimal ml-8 mb-1">
+                      {contribution}
+                    </li>
+                  ))}
+                </ol>
+              </>
+            )}
+            
           </div>
 
         </div>

@@ -123,7 +123,7 @@ export const workDetails = [
     Contributions: [
       "Spearheaded the development of a scalable invitation system for agencies for Bayut.com, integrating OTPs and shortened redirecting URLs to streamline user engagement and communication processes.",
       "Led the successful integration of user verification from Saudi Arabia’s REGA system’s licenses into Bayut.com, empowering 60,000+ users with enhanced permissions and fostering trust within the community.",
-      "Pioneered the implementation of an automated renewal system for listings, optimizing efficiency and management for agencies, contributing to increased user satisfaction and retention.",
+      "Pioneered the implementation of an automated renewal system for listings on Zameen.com, optimizing efficiency and management for agencies, contributing to increased user satisfaction and retention.",
       "Migrated user messages from the legacy implementation to the Mailboxer system on Zameen.com, improving communication infrastructure."
     ]
   },
