@@ -13,7 +13,7 @@ function About() {
       </section>
       <section>
         {/* TODO: GET THIS DURATION TO A VARIABLE TOO */}
-        <h1 className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
+        <h1 className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold mb-4">
           Work Experience (1 year 4 months)
         </h1>
         {React.Children.toArray(

@@ -104,7 +104,7 @@ function Work({ position, company, location, type, duration, link, logo, transcr
           <div>
             {contributions?.length > 0 && (
               <>
-                <h4 className="underline my-2">My Contributions:</h4>
+                <h4 className="underline underline-offset-4 my-2">My Contributions:</h4>
                 <ol>
                   {contributions.map(contribution => (
                     <li className="list-decimal ml-8 mb-1">
