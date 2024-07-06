@@ -97,13 +97,14 @@ function Work({ position, company, location, type, duration, link, logo, transcr
         </div>
       </div>
 
-      {showMoreStatus && contributions?.length > 0 && (
-        <div className="flex justify-start">
+      {/* {showMoreStatus && contributions?.length > 0 && ( */}
+
+        <div className={`flex justify-start overflow-hidden ${showMoreStatus ? 'h-full' : 'h-0'}`}>
           <div className="w-16 h-16 ml-8"></div>
           <div>
             <h4 className="underline my-2">My Contributions:</h4>
             <ol>
-              {contributions.map(contribution => (
+              {contributions?.length > 0 && contributions.map(contribution => (
                 <li className="list-decimal ml-8 mb-1">
                   {contribution}
                 </li>
@@ -112,7 +113,7 @@ function Work({ position, company, location, type, duration, link, logo, transcr
           </div>
 
         </div>
-      )}
+      {/* )} */}
 
 
     </article>

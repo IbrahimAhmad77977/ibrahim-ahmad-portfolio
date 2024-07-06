@@ -35,31 +35,21 @@ function Header() {
       </div>
       <nav className={` ${!isOpen ? "hidden" : null} text-center md:flex justify-between`}>
         <ul className="dark:text-light-content font-medium md:flex items-center md:space-x-5 md:mr-10">
-          <li className="flex flex-col justify-center h-1/2 pb-1 md:pb-0 px-2 hover:bg-blue-200">
-            <NavLink to="/" onClick={toggleClass}>
-              <span>Home</span>
-            </NavLink>
-          </li>
-          <li className="flex flex-col justify-center h-1/2 pb-1 md:pb-0 px-2 hover:bg-blue-200">
-            <NavLink to="/about" onClick={toggleClass}>
-              <span>About</span>
-            </NavLink>
-          </li>
-          <li className="flex flex-col justify-center h-1/2 pb-1 md:pb-0 px-2 hover:bg-blue-200">
-            <NavLink to="/technologies" onClick={toggleClass}>
-              <span>Technologies</span>
-            </NavLink>
-          </li>
-          <li className="flex flex-col justify-center h-1/2 pb-1 md:pb-0 px-2 hover:bg-blue-200">
-            <NavLink to="/projects" onClick={toggleClass}>
-              <span>Projects</span>
-            </NavLink>
-          </li>
-          <li className="flex flex-col justify-center h-1/2 px-2 hover:bg-blue-200">
-            <NavLink to="/contact" onClick={toggleClass}>
-              <span>Contact</span>
-            </NavLink>
-          </li>
+          <NavLink to="/" onClick={toggleClass} className="flex flex-col justify-center h-1/2 pb-1 md:pb-0 px-2 hover:bg-blue-200">
+            <span>Home</span>
+          </NavLink>
+          <NavLink to="/about" onClick={toggleClass} className="flex flex-col justify-center h-1/2 pb-1 md:pb-0 px-2 hover:bg-blue-200">
+            <span>About</span>
+          </NavLink>
+          <NavLink to="/technologies" onClick={toggleClass} className="flex flex-col justify-center h-1/2 pb-1 md:pb-0 px-2 hover:bg-blue-200">
+            <span>Technologies</span>
+          </NavLink>
+          <NavLink to="/projects" onClick={toggleClass} className="flex flex-col justify-center h-1/2 pb-1 md:pb-0 px-2 hover:bg-blue-200">
+            <span>Projects</span>
+          </NavLink>
+          <NavLink to="/contact" onClick={toggleClass} className="flex flex-col justify-center h-1/2 px-2 hover:bg-blue-200">
+            <span>Contact</span>
+          </NavLink>
         </ul>
         <ul className="flex justify-evenly items-center my-5 md:my-0 md:space-x-5 md:mr-5">
           {/* TODO: get stack overflow here icon! */}

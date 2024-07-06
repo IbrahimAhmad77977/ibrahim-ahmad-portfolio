@@ -245,7 +245,7 @@ export const projectDetails = [
     contributions: [
       'Implemented several analytical features into the dashboard app, such as tables, and custom filters.',
       'Performed comprehensive testing of the entire app and fixed resulting bugs.',
-      "Reworked the app's design to be more responsive and interactive with users"
+      "Reworked the app's design to be more responsive and interactive with users."
     ]
   },
   
