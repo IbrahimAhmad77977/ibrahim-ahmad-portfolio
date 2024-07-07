@@ -33,6 +33,7 @@ function Technologies() {
     gitkraken,
     aws,
     redis,
+    stripe,
     daisyui,
     newrelic,
     jira,
@@ -222,6 +223,11 @@ function Technologies() {
         <div className={iconContainerStyle}>
           <img src={redis} alt="" data-tooltip-id="redis-tooltip" data-tooltip-place="bottom" data-tooltip-content="Redis" />
           <Tooltip id="redis-tooltip" />
+        </div>
+
+        <div className={iconContainerStyle}>
+          <img src={stripe} alt="" data-tooltip-id="stripe-tooltip" data-tooltip-place="bottom" data-tooltip-content="Stripe" />
+          <Tooltip id="stripe-tooltip" />
         </div>
 
         <div className={iconContainerStyle}>

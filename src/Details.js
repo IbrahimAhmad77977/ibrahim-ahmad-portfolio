@@ -39,6 +39,7 @@ import gitkraken from "./assets/techstack/gitkraken.png"
 import aws from "./assets/techstack/aws.png"
 import redis from "./assets/techstack/redis.png"
 import daisyui from "./assets/techstack/daisyui.png"
+import stripe from "./assets/techstack/stripe.png"
 import newrelic from "./assets/techstack/newrelic.png"
 import jira from "./assets/techstack/jira.png"
 import notion from "./assets/techstack/notion.png"
@@ -68,6 +69,7 @@ import lumsLogo from "./assets/education/lums-logo.jpg"
 import dubizzleLogo from "./assets/experience/dubizzle-logo.jpg"
 import suaveLogo from "./assets/experience/suave-logo.jpg"
 import sthLogo from "./assets/experience/sth-logo.jpg"
+import dropellaLogo from "./assets/experience/dropella-logo.png"
 
 // Transcripts
 import transcript from "./assets/transcripts/Abdullah Ahmad's Transcript.pdf"
@@ -97,6 +99,21 @@ export const socialMediaUrl = {
 
 // Enter your Work Experience here
 export const workDetails = [
+  {
+    Position: "Frontend Developer",
+    Company: `Dropella`,
+    Location: "Remote",
+    Type: "Part Time",
+    Duration: "June 2024 - July 2024",
+    Link: "https://www.instagram.com/dropella.io",
+    Logo: dropellaLogo,
+    Contributions: [
+      "Accelerated software development by 50% through precise and effective technical feedback, significantly enhancing team efficiency.",
+      "Orchestrated a seamless deployment of the application to the live environment, ensuring high availability and performance.",
+      "Set up and reconfigured Stripe for a new account, ensuring full functionality and resolving payment and integration issues with Stripe and Intercom.",
+      "Mentored and led a team of three developers, providing guidance on daily tasks, conducting thorough code reviews, and improving overall code quality."
+    ]
+  },
   {
     Position: "Software Engineer",
     Company: `Dubizzle Labs`,
@@ -165,7 +182,12 @@ export const eduDetails = [
     Type: "Online",
     Duration: "Jun 2023 - Sep 2023",
     Link: "https://www.linkedin.com/school/university-of-helsinki/",
-    Logo: helsinkiLogo
+    Logo: helsinkiLogo,
+    Contributions: [
+      "Developed and deployed a connected full-stack application, showcasing the integration of front-end and back-end technologies.",
+      "Completed 10-12 assignments focused on different parts of MERN Stack, demonstrating proficiency in building full-stack applications",
+      "Acquired a comprehensive understanding of web development fundamentals with 4 in-depth modules."
+    ]
   },
   {
     Position: "Bachelor of Science in Computer Science",
@@ -175,7 +197,13 @@ export const eduDetails = [
     Duration: "Aug 2019 - Jun 2023",
     Link: "https://www.linkedin.com/school/lahore-university-of-management-sciences/",
     Logo: lumsLogo,
-    Transcript: transcript
+    Transcript: transcript,
+    Contributions: [
+      "Led a team of five developers to build an Android-based endless runner game, Highway Racers, as my Final Year Project.",
+      "Developed LUMSafar, a university socializing app, during my Software Engineering course.",
+      "Completed courses in AI, Machine Learning, and Data Science, delivering projects for each and demonstrating a solid understanding of their concepts.",
+      "Participated in the university badminton team for three years, winning two medals in internal tournaments and competing with other universities.",
+    ]
   },
 ];
 
@@ -212,6 +240,7 @@ export const techStackDetails = {
   redis: redis,
   daisyui: daisyui,
   newrelic: newrelic,
+  stripe: stripe,
   jira: jira,
   notion: notion,
   vercel: vercel
@@ -260,6 +289,19 @@ export const projectDetails = [
       "Contributed to backend for editing profile and searching by fixing errors in code.",
       "Majorly worked in documenting proposal document, SRS, and SDS.",
       "Conducted usability testing of the app."
+    ]
+  },
+
+  {
+    title: "Hyndburn Pantry Management System",
+    image: projectImage3,
+    description: `An admin panel built to manage customers and employees of the Hyndburn Pantry (U.K.).`,
+    techstack: "React.js, Tailwind",
+    previewLink: "https://foodpantry.nybble.co.uk/",
+    githubLink: null,
+    contributions: [
+      "Enhanced the website's user experience by adding a few extra features and making it fully responsive across various devices and screen sizes.",
+      "Ensured the app's stability and performance by identifying and resolving all bugs before final release."
     ]
   },
 

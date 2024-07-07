@@ -14,7 +14,7 @@ function About() {
       <section>
         {/* TODO: GET THIS DURATION TO A VARIABLE TOO */}
         <h1 className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold mb-4">
-          Work Experience (1 year 4 months)
+          Work Experience (1 year 5 months)
         </h1>
         {React.Children.toArray(
           workDetails.map(({ Position, Company, Location, Type, Duration, Link, Logo, Contributions }) => (
@@ -36,7 +36,7 @@ function About() {
           Education
         </h1>
         {React.Children.toArray(
-          eduDetails.map(({ Position, Company, Location, Type, Duration, Link, Logo, Transcript }) => (
+          eduDetails.map(({ Position, Company, Location, Type, Duration, Link, Logo, Transcript, Contributions }) => (
             <Work
               position={Position}
               company={Company}
@@ -46,6 +46,7 @@ function About() {
               link={Link}
               logo={Logo}
               transcript={Transcript}
+              contributions={Contributions}
             />
           ))
         )}
