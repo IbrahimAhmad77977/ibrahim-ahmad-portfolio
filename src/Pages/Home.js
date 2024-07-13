@@ -129,7 +129,7 @@ function Home() {
       </div>
 
       <div className="mt-5 md:mt-0">
-        <img ref={myimageref} className="w-3/4 md:ml-auto rounded-full border-2" src={img} alt="Abdullah Ahmad" />
+        <img ref={myimageref} className="w-3/4 md:ml-auto rounded-full border-2" src={img} alt="Image of Abdullah Ahmad, the founder of AAK Tech" />
       </div>
     </main>
   );

@@ -27,7 +27,7 @@ body::-webkit-scrollbar {
 }
 
 .accordion:hover .accordion-content {
-  max-height: 300px;
+  max-height: 500px;
 }
 
 .accordion-content {

@@ -17,7 +17,7 @@ function Project({ title, image, description, techstack, previewLink, githubLink
               Contributions
             </div>
           </div>
-          <img src={image} alt="" loading="lazy" className="w-full h-full object-cover object-top" />
+          <img src={image} alt={`Cover image for AAK Tech's project '${title}'`} loading="lazy" className="w-full h-full object-cover object-top" />
           
         </div>
         

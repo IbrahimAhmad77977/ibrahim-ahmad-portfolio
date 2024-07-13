@@ -57,6 +57,7 @@ import projectImage6 from "./assets/projects/project6.jpg";
 import dropellaProjectImage from "./assets/projects/dropellaImage.jpg"
 import lumsafarProjectImage from "./assets/projects/lumsafarImage.png"
 import a5bcProjectImage from "./assets/projects/a5bcImage.png"
+import hyndburnPantryProjectImage from "./assets/projects/hyndburnPantryImage.png"
 // import softwareHouseProjectImage from "./assets/projects/softwareHouseImage"
 import highwayRacersProjectImage from "./assets/projects/highwayRacersImage.jpg"
 import breakoutsAndSetupsProjectImage from "./assets/projects/breakoutSetupsImage.png"
@@ -70,6 +71,10 @@ import dubizzleLogo from "./assets/experience/dubizzle-logo.jpg"
 import suaveLogo from "./assets/experience/suave-logo.jpg"
 import sthLogo from "./assets/experience/sth-logo.jpg"
 import dropellaLogo from "./assets/experience/dropella-logo.png"
+
+// Experience Group Images
+import dubizzleGroupPhoto from "./assets/experience/dubizzle-group-image.jpg"
+import suaveGroupPhoto from "./assets/experience/suave-group-image.jpg"
 
 // Transcripts
 import transcript from "./assets/transcripts/Abdullah Ahmad's Transcript.pdf"
@@ -86,7 +91,7 @@ export const personalDetails = {
   tagline: "Building Tomorrow, 1 App at a Time",
   img: profile,
   about: `Software Engineer with a strong foundation in web development and a passion for crafting innovative solutions. 
-          Proficient in many technologies including Ruby on Rails, MERN Stack, PHP, SvelteKit, Tailwind, and Bootstrap. I'm eager to leverage my skills and embrace new challenges in the world of web development and software engineering.`,
+          Proficient in many technologies including Ruby on Rails, MERN Stack, SvelteKit, PHP, Tailwind, and Bootstrap. I'm eager to leverage my skills and embrace new challenges in the world of web development and software engineering.`,
 };
 
 // Enter your Social Media URLs here
@@ -103,7 +108,7 @@ export const workDetails = [
     Position: "Frontend Developer",
     Company: `Dropella`,
     Location: "Remote",
-    Type: "Part Time",
+    Type: "Contract",
     Duration: "June 2024 - July 2024",
     Link: "https://www.instagram.com/dropella.io",
     Logo: dropellaLogo,
@@ -112,7 +117,8 @@ export const workDetails = [
       "Orchestrated a seamless deployment of the application to the live environment, ensuring high availability and performance.",
       "Set up and reconfigured Stripe for a new account, ensuring full functionality and resolving payment and integration issues with Stripe and Intercom.",
       "Mentored and led a team of three developers, providing guidance on daily tasks, conducting thorough code reviews, and improving overall code quality."
-    ]
+    ],
+    ExtraImageDetails: null
   },
   {
     Position: "Software Engineer",
@@ -127,7 +133,12 @@ export const workDetails = [
       "Developed and integrated a secure checkout process on Seller Center with 3-D Secure and non-3-D Secure payments using Checkout, enabling seamless order finalization and online payment processing.",
       "Implemented image uploading to AWS S3 buckets for product listings via presigned URLs, enhancing storage efficiency and security.",
       "Automated expiring credits’ and monthly credits utilization, following complex criteria to maximize credit efficiency on Zameen.com."
-    ]
+    ],
+    ExtraImageDetails: {
+      image: dubizzleGroupPhoto,
+      title: "Team Legion Group Photo",
+      description: "A group photo with Team Legion, composing of back-end developers and SQA engineers."
+    }
   },
   {
     Position: "Associate Software Engineer",
@@ -142,7 +153,12 @@ export const workDetails = [
       "Led the successful integration of user verification from Saudi Arabia’s REGA system’s licenses into Bayut.com, empowering 60,000+ users with enhanced permissions and fostering trust within the community.",
       "Pioneered the implementation of an automated renewal system for listings on Zameen.com, optimizing efficiency and management for agencies, contributing to increased user satisfaction and retention.",
       "Migrated user messages from the legacy implementation to the Mailboxer system on Zameen.com, improving communication infrastructure."
-    ]
+    ],
+    ExtraImageDetails: {
+      image: dubizzleGroupPhoto,
+      title: "Team Legion Group Photo",
+      description: "A group photo with Team Legion, composing of back-end developers and SQA engineers."
+    }
   },
   {
     Position: "Intern PHP Developer",
@@ -155,7 +171,12 @@ export const workDetails = [
     Contributions: [
       "Transformed the company’s portal through the development of several admin panel features, elevating user experience by implementing intuitive interfaces, enhancing data visualization, and optimizing performance.",
       "Streamlined system operations through the successful implementation of CRON files, enabling automated execution of essential tasks with precision."
-    ]
+    ],
+    ExtraImageDetails: {
+      image: suaveGroupPhoto,
+      title: "Group Photo with Development Team",
+      description: "A group photo with the Development Team, taken on the last working day before Pakistan Day 2024."
+    }
   },
   {
     Position: "Software Engineering Intern",
@@ -169,7 +190,8 @@ export const workDetails = [
       "Gained design proficiency by coding HTML/CSS, transforming designs into functional interfaces. Enhanced styling efficiency and interactivity by utilizing SASS, SCSS, and jQuery, resulting in streamlined design workflows and dynamic user experiences. ",
       "Facilitated seamless user experiences and visual consistency by accurately translating complex PSD designs into meticulously crafted HTML/CSS implementations.",
       "Independently developed a comprehensive CRUD system for employees, leveraging PHP 8.0 to enhance data management capabilities."
-    ]
+    ],
+    ExtraImageDetails: null
   },
 ];
 
@@ -294,7 +316,7 @@ export const projectDetails = [
 
   {
     title: "Hyndburn Pantry Management System",
-    image: projectImage3,
+    image: hyndburnPantryProjectImage,
     description: `An admin panel built to manage customers and employees of the Hyndburn Pantry (U.K.).`,
     techstack: "React.js, Tailwind",
     previewLink: "https://foodpantry.nybble.co.uk/",

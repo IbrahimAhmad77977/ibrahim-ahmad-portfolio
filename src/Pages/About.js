@@ -1,6 +1,7 @@
 import React from "react";
 import Work from "../Components/Work";
 import { personalDetails, workDetails, eduDetails } from "../Details";
+import { Tooltip } from 'react-tooltip'
 
 function About() {
   return (
@@ -13,11 +14,19 @@ function About() {
       </section>
       <section>
         {/* TODO: GET THIS DURATION TO A VARIABLE TOO */}
-        <h1 className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold mb-4">
-          Work Experience (1 year 5 months)
+        <h1 
+          className="inline-block text-2xl text-dark-heading dark:text-light-heading 
+                      md:text-4xl xl:text-5xl xl:leading-tight font-bold mb-4"
+          data-tooltip-id="experience-tooltip" 
+          data-tooltip-place="right" 
+          data-tooltip-content="1.5 years"
+        >
+          Work Experience
         </h1>
+        <Tooltip id="experience-tooltip" />
+
         {React.Children.toArray(
-          workDetails.map(({ Position, Company, Location, Type, Duration, Link, Logo, Contributions }) => (
+          workDetails.map(({ Position, Company, Location, Type, Duration, Link, Logo, Contributions, ExtraImageDetails }) => (
             <Work
               position={Position}
               company={Company}
@@ -27,6 +36,7 @@ function About() {
               link={Link}
               logo={Logo}
               contributions={Contributions}
+              extraImageDetails={ExtraImageDetails}
             />
           ))
         )}

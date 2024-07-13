@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-function Work({ position, company, location, type, duration, link, logo, transcript, contributions }) {
+function Work({ position, company, location, type, duration, link, logo, transcript, contributions, extraImageDetails }) {
 
-  console.log('These r contirbutinso: ', contributions)
+  console.log('These r contirbutinso: ', extraImageDetails)
   const [showMoreStatus, setShowMoreStatus] = useState(false)
 
   const showMore = () => {
@@ -29,15 +29,8 @@ function Work({ position, company, location, type, duration, link, logo, transcr
     >
 
       <div className="flex justify-start gap-4 accordion-toggle">
-
-        {/* TODO: Have more details shown to user about each position!  */}
-        {/* <img src={logo} alt="Logo">121</img> */}
-
         <img src={logo} className="w-16 h-16 border-2 ml-4"></img>
-
         <div className="w-full">
-
-
           <div className="flex justify-between items-center">
             <h1 className="text-content md:text-lg lg:text-xl">{position}</h1>
             <div className="btn bg-greenbg text-green-text text-xs inline-block rounded-3xl px-3 py-1 min-w-fit">
@@ -97,29 +90,37 @@ function Work({ position, company, location, type, duration, link, logo, transcr
         </div>
       </div>
 
-      {/* {showMoreStatus && contributions?.length > 0 && ( */}
+      <div className={`flex justify-start overflow-hidden accordion-content`}>
+        <div className="w-16 h-16 ml-8"></div>
+        <div>
+          {contributions?.length > 0 && (
+            <>
+              <h4 className="underline underline-offset-4 my-2 ml-6">My Contributions:</h4>
+              <ol>
+                {contributions.map(contribution => (
+                  <li className="list-decimal ml-12 mb-1">
+                    {contribution}
+                  </li>
+                ))}
+              </ol>
+            </>
+          )}
 
-        <div className={`flex justify-start overflow-hidden accordion-content`}>
-          <div className="w-16 h-16 ml-8"></div>
-          <div>
-            {contributions?.length > 0 && (
-              <>
-                <h4 className="underline underline-offset-4 my-2 ml-6">My Contributions:</h4>
-                <ol>
-                  {contributions.map(contribution => (
-                    <li className="list-decimal ml-12 mb-1">
-                      {contribution}
-                    </li>
-                  ))}
-                </ol>
-              </>
-            )}
-            
-          </div>
+          {extraImageDetails != null && (
+            <div className="flex justify-start mt-4 ml-6 gap-4">
+              <div className="w-[208px] h-28 rounded-lg overflow-hidden">
+                <img src={extraImageDetails.image}></img>
+              </div>
+              <div className="text-[14px]">
+                <h4 className="font-semibold">{extraImageDetails?.title}</h4>
+                <p>{extraImageDetails?.description}</p>
+              </div>
+            </div>
+          )}
 
         </div>
-      {/* )} */}
 
+      </div>
 
     </article>
   );
