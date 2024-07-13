@@ -308,7 +308,7 @@ export const projectDetails = [
     previewLink: null,
     githubLink: "https://github.com/AhsanSarwar45/LUMSafar",
     contributions: [
-      "Contributed to backend for editing profile and searching by fixing errors in code.",
+      "Developed the backend for the user profile module and related features.",
       "Majorly worked in documenting proposal document, SRS, and SDS.",
       "Conducted usability testing of the app."
     ]
@@ -364,7 +364,7 @@ export const projectDetails = [
       "Led and managed a team of 5 developers, delegating tasks and ensuring team cohesion.",
       "Developed various game features in it,such as infinite path generation, bike movement and bike aesthetics.",
       "Contributed to the game's UI by creating aesthetic start and end screens.",
-      "Wrote and maintained 80+ % of the documentation.",
+      "Wrote and maintained 80%+ of the documentation.",
       "Researched into game development resources - “The Art of Game Design” and a game development YouTube playlist by Mindstorm Studios."
     ]
   }
