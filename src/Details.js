@@ -58,6 +58,7 @@ import dropellaProjectImage from "./assets/projects/dropellaImage.jpg"
 import lumsafarProjectImage from "./assets/projects/lumsafarImage.png"
 import a5bcProjectImage from "./assets/projects/a5bcImage.png"
 import hyndburnPantryProjectImage from "./assets/projects/hyndburnPantryImage.png"
+import innerLahoreProjectImage from "./assets/projects/innerLahoreImage.png"
 // import softwareHouseProjectImage from "./assets/projects/softwareHouseImage"
 import highwayRacersProjectImage from "./assets/projects/highwayRacersImage.jpg"
 import breakoutsAndSetupsProjectImage from "./assets/projects/breakoutSetupsImage.png"
@@ -314,6 +315,19 @@ export const projectDetails = [
     ]
   },
 
+  {
+    title: "Inner Lahore Tour Guide",
+    image: innerLahoreProjectImage,
+    description: `An informatory tour guide web app, built with an interactive map to generate plans for tourists.`,
+    techstack: "React.js, Tailwind",
+    previewLink: "https://daryaft-e-lahore.web.app/",
+    githubLink: null,
+    contributions: [
+      "Delivered a functional app that suggests randomized, sensible tour plans to tourists.",
+      "Ensured an attractive and aesthetic user interface.",
+    ]
+  },
+  
   {
     title: "Hyndburn Pantry Management System",
     image: hyndburnPantryProjectImage,
