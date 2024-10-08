@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { personalDetails } from "../Details";
-import resumePdf from '../assets/resumes/Abdullah Ahmad - Resume - 2024.pdf';
+import resumePdf from '../assets/resumes/Resume - Abdullah Ahmad - 2024.pdf';
 
 function Home() {
 

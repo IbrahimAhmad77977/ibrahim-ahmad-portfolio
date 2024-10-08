@@ -59,6 +59,7 @@ import lumsafarProjectImage from "./assets/projects/lumsafarImage.png"
 import a5bcProjectImage from "./assets/projects/a5bcImage.png"
 import hyndburnPantryProjectImage from "./assets/projects/hyndburnPantryImage.png"
 import innerLahoreProjectImage from "./assets/projects/innerLahoreImage.png"
+import abdulBasitPawarPortfolioImage from "./assets/projects/basitPortfolioImage.png"
 // import softwareHouseProjectImage from "./assets/projects/softwareHouseImage"
 import highwayRacersProjectImage from "./assets/projects/highwayRacersImage.jpg"
 import breakoutsAndSetupsProjectImage from "./assets/projects/breakoutSetupsImage.png"
@@ -106,11 +107,11 @@ export const socialMediaUrl = {
 // Enter your Work Experience here
 export const workDetails = [
   {
-    Position: "Frontend Developer",
+    Position: "Senior Frontend Developer",
     Company: `Dropella`,
     Location: "Remote",
     Type: "Contract",
-    Duration: "June 2024 - July 2024",
+    Duration: "June 2024 - August 2024",
     Link: "https://www.instagram.com/dropella.io",
     Logo: dropellaLogo,
     Contributions: [
@@ -279,11 +280,13 @@ export const projectDetails = [
     previewLink: "https://dropella.vercel.app",
     githubLink: null,
     contributions: [
+      'Successfully launched the 1st build of Dropella, delivering a functional app and ensuring resolution of all bugs.',
       'Led and mentored 10 front-end developers, fostering collaboration with designers and back-end developers to deliver efficient and cohesive project development.',
+      'Enhanced customer conversion rates by 30% by implementing paid one-day trial periods before subscriptioncommitments in Stripe.',
       'Integrated 25+ products, stores, and ads APIs, ensuring precise real-time analytics and enhancing overall app functionality.',
       "Integrated OpenAI's ChatGPT-3M6 to provide intelligent data insights, where API data was insufficient, leading to a more fulfilling user experience.",
       'Utilized Tailwind and Daisy UI to craft a pixel-perfect, responsive UI, achieving a 95% Figma design fidelity for a user-friendly app interface.',
-      ' Implemented internal store tracking for sales’ listings and details pages, maintaining data integrity and accuracy per client requirements.'
+      'Implemented internal store tracking for sales’ listings and details pages, maintaining data integrity and accuracy per client requirements.'
     ]
   },
 
@@ -295,9 +298,9 @@ export const projectDetails = [
     previewLink: "https://dashboard.breakoutsandsetups.com",
     githubLink: null,
     contributions: [
-      'Implemented several analytical features into the dashboard app, such as tables, and custom filters.',
-      'Performed comprehensive testing of the entire app and fixed resulting bugs.',
-      "Reworked the app's design to be more responsive and interactive with users."
+      'Developed a custom emailing system for admins with Firebase, enabling them to efficiently communicate with premium users, enhancing user engagement.',
+      'Enhanced user experience by implementing 8 additional UI sections and a drag-and-drop feature, allowing users to easily add tickers to watchlists, increasing platform interactivity',
+      "Implemented customizable timeframe-based layouts, enabling users to dynamically toggle and control the visibility of various data elements for each timeframe"
     ]
   },
   
@@ -320,11 +323,24 @@ export const projectDetails = [
     image: innerLahoreProjectImage,
     description: `An informatory tour guide web app, built with an interactive map to generate plans for tourists.`,
     techstack: "React.js, Tailwind",
-    previewLink: "https://daryaft-e-lahore.web.app/",
+    previewLink: "abdulbasitpawar.com",
     githubLink: null,
     contributions: [
       "Delivered a functional app that suggests randomized, sensible tour plans to tourists.",
       "Ensured an attractive and aesthetic user interface.",
+    ]
+  },
+
+  {
+    title: "Abdul Basit Pawar's Portfolio",
+    image: abdulBasitPawarPortfolioImage,
+    description: `A portfolio for a Math tutor, offering classes online to an international audience.`,
+    techstack: "SvelteKit",
+    previewLink: "https://www.abdulbasitpawar.com/",
+    githubLink: null,
+    contributions: [
+      "Collaborated closely with the client to design and develop the website.",
+      "Managed deployment and hosting of the website.",
     ]
   },
   
@@ -332,12 +348,13 @@ export const projectDetails = [
     title: "Hyndburn Pantry Management System",
     image: hyndburnPantryProjectImage,
     description: `An admin panel built to manage customers and employees of the Hyndburn Pantry (U.K.).`,
-    techstack: "React.js, Tailwind",
-    previewLink: "https://foodpantry.nybble.co.uk/",
+    techstack: "React.js, Node.js, Express, MongoDB, Tailwind",
+    previewLink: "https://app.hyndburnfoodpantry.co.uk",
     githubLink: null,
     contributions: [
-      "Enhanced the website's user experience by adding a few extra features and making it fully responsive across various devices and screen sizes.",
-      "Ensured the app's stability and performance by identifying and resolving all bugs before final release."
+      "Integrated reading of customers' RFID cards into the system",
+      "Revamped the old app with a new UI.",
+      "Developed user management feature and customer reports feature in "
     ]
   },
 
