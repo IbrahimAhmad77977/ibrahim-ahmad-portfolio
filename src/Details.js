@@ -65,6 +65,7 @@ import highwayRacersProjectImage from "./assets/projects/highwayRacersImage.jpg"
 import breakoutsAndSetupsProjectImage from "./assets/projects/breakoutSetupsImage.png"
 
 // Education images
+import datacampLogo from "./assets/education/datacamp-logo.png"
 import helsinkiLogo from "./assets/education/helsinki-logo.png"
 import lumsLogo from "./assets/education/lums-logo.jpg"
 
@@ -199,6 +200,20 @@ export const workDetails = [
 
 // Enter your Education Details here
 export const eduDetails = [
+  {
+    Position: "Introduction to Docker",
+    Company: "DataCamp",
+    Location: "Online",
+    Type: "Online",
+    Duration: "October 2024",
+    Link: "https://www.datacamp.com/courses/introduction-to-docker",
+    Logo: datacampLogo,
+    Contributions: [
+      "Mastered Docker basics, including building, running, and managing containers for application deployment.",
+      "Created custom Docker images using Dockerfiles, and managed images through Docker Hub.",
+      "Configured multi-container applications using Docker Compose for seamless integration of services."
+    ]
+  },
   {
     Position: "Full Stack Development Course",
     Company: "University of Helsinki",
