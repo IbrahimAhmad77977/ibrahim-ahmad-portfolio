@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { logos, socialMediaUrl } from "../Details";
+import { socialMediaUrl } from "../Details";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const { linkdein, github, twitter } = socialMediaUrl;
+  const { linkedin, github, stackoverflow } = socialMediaUrl;
   const toggleClass = () => {
     setIsOpen(!isOpen);
   };
@@ -12,9 +12,7 @@ function Header() {
   return (
     <header className="container mx-auto md:flex justify-between py-2 max-width">
       <div className="flex justify-between items-center py-2 md:py-10">
-        <NavLink to="/">
-          <img className="aspect-ratio w-80" src={logos.logogradient} alt="AAK Tech's logo" />
-        </NavLink>
+    
         <div onClick={toggleClass} className="cursor-pointer">
           <svg
             className="stroke-dark-heading dark:stroke-white md:hidden"
@@ -52,23 +50,22 @@ function Header() {
           </NavLink>
         </ul>
         <ul className="flex justify-evenly items-center my-5 md:my-0 md:space-x-5 md:mr-5">
-          {/* TODO: get stack overflow here icon! */}
-          {/* <li>
-            <a href={twitter} target="_blank" rel="noreferrer noopener">
-              <svg
-                className="dark:fill-light-heading fill-dark-heading"
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M16.875 1.875C8.59152 1.875 1.875 8.59152 1.875 16.875C1.875 25.1585 8.59152 31.875 16.875 31.875C25.1585 31.875 31.875 25.1585 31.875 16.875C31.875 8.59152 25.1585 1.875 16.875 1.875ZM24.0837 13.1819C24.0937 13.3393 24.0937 13.5033 24.0937 13.6641C24.0937 18.5792 20.3504 24.2411 13.51 24.2411C11.4007 24.2411 9.44531 23.6283 7.79799 22.5737C8.09933 22.6071 8.38728 22.6205 8.69531 22.6205C10.4364 22.6205 12.0368 22.0312 13.3125 21.0335C11.6786 21 10.3058 19.9286 9.83705 18.4554C10.4096 18.5391 10.9252 18.5391 11.5145 18.3884C10.6732 18.2175 9.91699 17.7605 9.37438 17.0953C8.83178 16.43 8.53623 15.5973 8.53795 14.7388V14.692C9.03013 14.9699 9.60938 15.1406 10.2154 15.1641C9.70595 14.8245 9.28814 14.3645 8.99903 13.8249C8.70993 13.2852 8.55845 12.6825 8.55804 12.0703C8.55804 11.3772 8.73884 10.7444 9.06362 10.1953C9.99744 11.3449 11.1627 12.2851 12.4837 12.9548C13.8047 13.6245 15.2518 14.0088 16.731 14.0826C16.2054 11.5547 18.0938 9.50893 20.3638 9.50893C21.4353 9.50893 22.3996 9.95759 23.0792 10.6808C23.9196 10.5234 24.7232 10.2087 25.4397 9.78683C25.1618 10.6473 24.5792 11.3739 23.8058 11.8326C24.5558 11.7522 25.279 11.5446 25.9487 11.2533C25.4431 11.9967 24.8103 12.6562 24.0837 13.1819Z" />
-              </svg>
-            </a>
-          </li> */}
+      <li>
+  <a href={stackoverflow} target="_blank" rel="noreferrer noopener">
+    <svg
+      className="dark:fill-light-heading fill-dark-heading hover:bg-orange-200 rounded-full transition duration-300 hover:scale-[1.1]"
+      width="30"
+      height="30"
+      viewBox="0 0 30 30"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M27 0H3C1.35 0 0 1.35 0 3V27C0 28.65 1.35 30 3 30H27C28.65 30 30 28.65 30 27V3C30 1.35 28.65 0 27 0ZM22.8 25.2H8.4V23.4H22.8V25.2ZM20.49 21.75L9.81 19.95L10.14 18.21L20.82 20.01L20.49 21.75ZM21.15 18.6L11.1 15.24L11.7 13.59L21.75 16.95L21.15 18.6ZM22.17 15.36L13.5 10.41L14.37 8.94L23.04 13.89L22.17 15.36ZM23.49 11.73L16.41 5.82L17.58 4.59L24.66 10.5L23.49 11.73ZM18.6 22.5H12.6V17.1H18.6V22.5Z" />
+    </svg>
+  </a>
+</li>
           <li>
-            <a href={linkdein} target="_blank" rel="noreferrer noopener">
+            <a href={linkedin} target="_blank" rel="noreferrer noopener">
               <svg
                 className="dark:fill-light-heading fill-dark-heading hover:bg-blue-200 rounded-full transition duration-300 hover:scale-[1.1]"
                 width="30"

@@ -17,7 +17,7 @@ function Project({ title, image, description, techstack, previewLink, githubLink
               Contributions
             </div>
           </div>
-          <img src={image} alt={`Cover image for AAK Tech's project '${title}'`} loading="lazy" className="w-full h-full object-cover object-top" />
+          <img src={image} alt={`Cover for Ibrahim Ahmad's project '${title}'`} loading="lazy" className="w-full h-full object-cover object-top" />
           
         </div>
         
@@ -29,7 +29,6 @@ function Project({ title, image, description, techstack, previewLink, githubLink
           </h3>
           
           <div className="flex justify-between items-center mt-5">
-            {/* TODO: MODULAR! */}
             <div className="flex items-center">
               { 
                 previewLink != null ?
@@ -120,7 +119,6 @@ function Project({ title, image, description, techstack, previewLink, githubLink
                 </ol>
               )
             }
-            {/* TODO: lookup better ways to style this! */}
             <div className="flex justify-end">
               <button onClick={() => setIsModalOpen(false)} className="px-4 py-2 bg-red-600 text-white rounded">
                 Close

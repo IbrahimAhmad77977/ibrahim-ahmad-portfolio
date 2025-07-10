@@ -1,16 +1,16 @@
 import React, { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { personalDetails } from "../Details";
-import resumePdf from '../assets/resumes/Resume - Abdullah Ahmad - 2024.pdf';
+import resumePdf from '../assets/resumes/Resume - Ibrahim Ahmad - 2025.pdf';
 
 function Home() {
 
-  const { name, tagline, img } = personalDetails;
+  const { name, img } = personalDetails;
 
   const downloadResume = () => {
     const link = document.createElement('a');
     link.href = resumePdf; // Replace with the correct path
-    link.download = 'Abdullah Ahmad - Resume - 2024.pdf'; // The name of the file once downloaded
+    link.download = 'Ibrahim Ahmad - Resume - 2025.pdf'; // The name of the file once downloaded
     link.click();
   };
 
@@ -94,15 +94,9 @@ function Home() {
           >
             {name}
           </h1>
-          <h2
-            ref={h13}
-            className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold"
-          >
-            {tagline}
-          </h2>
+          
         </div>
 
-        {/* TODO: could use another React component for this */}
         <button
           ref={h14}
           onClick={downloadResume}
@@ -129,7 +123,7 @@ function Home() {
       </div>
 
       <div className="mt-5 md:mt-0">
-        <img ref={myimageref} className="w-3/4 md:ml-auto rounded-full border-2" src={img} alt="Image of Abdullah Ahmad, the founder of AAK Tech" />
+        <img ref={myimageref} className="w-3/4 md:ml-auto rounded-full border-2" src={img} alt="Ibrahim Ahmad" />
       </div>
     </main>
   );

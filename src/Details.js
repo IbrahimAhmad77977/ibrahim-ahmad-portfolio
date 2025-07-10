@@ -46,12 +46,7 @@ import notion from "./assets/techstack/notion.png"
 import vercel from "./assets/techstack/vercel.svg"
 
 // Porject Images
-import projectImage1 from "./assets/projects/project1.jpg";
-import projectImage2 from "./assets/projects/project2.jpg";
 import projectImage3 from "./assets/projects/project3.jpg";
-import projectImage4 from "./assets/projects/project4.jpg";
-import projectImage5 from "./assets/projects/project5.jpg";
-import projectImage6 from "./assets/projects/project6.jpg";
 
 
 import dropellaProjectImage from "./assets/projects/dropellaImage.jpg"
@@ -69,16 +64,6 @@ import datacampLogo from "./assets/education/datacamp-logo.png"
 import helsinkiLogo from "./assets/education/helsinki-logo.png"
 import lumsLogo from "./assets/education/lums-logo.jpg"
 
-// Experience Images
-import dubizzleLogo from "./assets/experience/dubizzle-logo.jpg"
-import suaveLogo from "./assets/experience/suave-logo.jpg"
-import sthLogo from "./assets/experience/sth-logo.jpg"
-import dropellaLogo from "./assets/experience/dropella-logo.png"
-
-// Experience Group Images
-import dubizzleGroupPhoto from "./assets/experience/dubizzle-group-image.jpg"
-import suaveGroupPhoto from "./assets/experience/suave-group-image.jpg"
-
 // Transcripts
 import transcript from "./assets/transcripts/Abdullah Ahmad's Transcript.pdf"
 
@@ -90,142 +75,44 @@ export const logos = {
 
 // Enter your Personal Details here
 export const personalDetails = {
-  name: "Abdullah Ahmad",
-  tagline: "Building Tomorrow, 1 App at a Time",
+  name: "Ibrahim Ahmad",
   img: profile,
-  about: `Software Engineer with a strong foundation in web development and a passion for crafting innovative solutions. 
-          Proficient in many technologies including Ruby on Rails, MERN Stack, SvelteKit, PHP, Tailwind, and Bootstrap. I'm eager to leverage my skills and embrace new challenges in the world of web development and software engineering.`,
+  about: `Software Engineer with a strong foundation in web development. 
+          Proficient in many technologies including SvelteKit, Tailwind, and Bootstrap. I'm eager to leverage my skills and embrace new challenges in the world of web development and software engineering.`,
 };
 
 // Enter your Social Media URLs here
 export const socialMediaUrl = {
-  linkdein: "https://www.linkedin.com/in/abdullah-ahmad-70b1bb13b/",
-  github: "https://github.com/AbdullahAhmadAAK",
-  twitter: "https://stackoverflow.com/users/19407338/abdullah-ahmad",
-  instagram: "https://www.instagram.com/",
+  linkedin: "https://www.linkedin.com/in/ibrahim-ahmad-4036b1322/",
+  github: "https://github.com/IbrahimAhmad77977",
+  stackoverflow: "https://stackoverflow.com/users/27017180/ibrahim-ahmad",
 };
-
-// Enter your Work Experience here
-export const workDetails = [
-  {
-    Position: "Senior Frontend Developer",
-    Company: `Dropella`,
-    Location: "Remote",
-    Type: "Contract",
-    Duration: "June 2024 - August 2024",
-    Link: "https://www.instagram.com/dropella.io",
-    Logo: dropellaLogo,
-    Contributions: [
-      "Accelerated software development by 50% through precise and effective technical feedback, significantly enhancing team efficiency.",
-      "Orchestrated a seamless deployment of the application to the live environment, ensuring high availability and performance.",
-      "Set up and reconfigured Stripe for a new account, ensuring full functionality and resolving payment and integration issues with Stripe and Intercom.",
-      "Mentored and led a team of three developers, providing guidance on daily tasks, conducting thorough code reviews, and improving overall code quality."
-    ],
-    ExtraImageDetails: null
-  },
-  {
-    Position: "Software Engineer",
-    Company: `Dubizzle Labs`,
-    Location: "Lahore, Pakistan",
-    Type: "Full Time",
-    Duration: "Mar 2024 - May 2024",
-    Link: "https://www.linkedin.com/company/dubizzlelabs/",
-    Logo: dubizzleLogo,
-    Contributions: [
-      "Implemented Redis-based shopping cart functionality on Seller Center, optimizing performance by 40%.",
-      "Developed and integrated a secure checkout process on Seller Center with 3-D Secure and non-3-D Secure payments using Checkout, enabling seamless order finalization and online payment processing.",
-      "Implemented image uploading to AWS S3 buckets for product listings via presigned URLs, enhancing storage efficiency and security.",
-      "Automated expiring credits’ and monthly credits utilization, following complex criteria to maximize credit efficiency on Zameen.com."
-    ],
-    ExtraImageDetails: {
-      image: dubizzleGroupPhoto,
-      title: "Team Legion Group Photo",
-      description: "A group photo with Team Legion, composing of back-end developers and SQA engineers."
-    }
-  },
-  {
-    Position: "Associate Software Engineer",
-    Company: `Dubizzle Labs`,
-    Location: "Lahore, Pakistan",
-    Type: "Full Time",
-    Duration: "Sep 2023 - Mar 2024",
-    Link: "https://www.linkedin.com/company/dubizzlelabs/",
-    Logo: dubizzleLogo,
-    Contributions: [
-      "Spearheaded the development of a scalable invitation system for agencies for Bayut.com, integrating OTPs and shortened redirecting URLs to streamline user engagement and communication processes.",
-      "Led the successful integration of user verification from Saudi Arabia’s REGA system’s licenses into Bayut.com, empowering 60,000+ users with enhanced permissions and fostering trust within the community.",
-      "Pioneered the implementation of an automated renewal system for listings on Zameen.com, optimizing efficiency and management for agencies, contributing to increased user satisfaction and retention.",
-      "Migrated user messages from the legacy implementation to the Mailboxer system on Zameen.com, improving communication infrastructure."
-    ],
-    ExtraImageDetails: {
-      image: dubizzleGroupPhoto,
-      title: "Team Legion Group Photo",
-      description: "A group photo with Team Legion, composing of back-end developers and SQA engineers."
-    }
-  },
-  {
-    Position: "Intern PHP Developer",
-    Company: `Suave Solutions`,
-    Location: "Lahore, Pakistan",
-    Type: "Internship",
-    Duration: "Jun 2023 - Sep 2023",
-    Link: "https://www.linkedin.com/company/suave-solutions/",
-    Logo: suaveLogo,
-    Contributions: [
-      "Transformed the company’s portal through the development of several admin panel features, elevating user experience by implementing intuitive interfaces, enhancing data visualization, and optimizing performance.",
-      "Streamlined system operations through the successful implementation of CRON files, enabling automated execution of essential tasks with precision."
-    ],
-    ExtraImageDetails: {
-      image: suaveGroupPhoto,
-      title: "Group Photo with Development Team",
-      description: "A group photo with the Development Team, taken on the last working day before Pakistan Day 2024."
-    }
-  },
-  {
-    Position: "Software Engineering Intern",
-    Company: `Smart Technology House`,
-    Location: "Lahore, Pakistan",
-    Type: "Internship",
-    Duration: "Jun 2022 - Aug 2022",
-    Link: "https://www.linkedin.com/company/smart-technology-house/",
-    Logo: sthLogo,
-    Contributions: [
-      "Gained design proficiency by coding HTML/CSS, transforming designs into functional interfaces. Enhanced styling efficiency and interactivity by utilizing SASS, SCSS, and jQuery, resulting in streamlined design workflows and dynamic user experiences. ",
-      "Facilitated seamless user experiences and visual consistency by accurately translating complex PSD designs into meticulously crafted HTML/CSS implementations.",
-      "Independently developed a comprehensive CRUD system for employees, leveraging PHP 8.0 to enhance data management capabilities."
-    ],
-    ExtraImageDetails: null
-  },
-];
 
 // Enter your Education Details here
 export const eduDetails = [
   {
-    Position: "Introduction to Docker",
-    Company: "DataCamp",
+    Position: "Helsinki Course",
+    Company: "Houston Inc",
     Location: "Online",
     Type: "Online",
-    Duration: "October 2024",
-    Link: "https://www.datacamp.com/courses/introduction-to-docker",
+    Duration: "June 2025 – Current",
+    Link: "https://fullstackopen.com/en/",
     Logo: datacampLogo,
     Contributions: [
-      "Mastered Docker basics, including building, running, and managing containers for application deployment.",
-      "Created custom Docker images using Dockerfiles, and managed images through Docker Hub.",
-      "Configured multi-container applications using Docker Compose for seamless integration of services."
+      "Learned about Fundamentals of Web Apps",
+      "Currently learning about the fundamentals of React, such as state and hooks",
     ]
   },
   {
-    Position: "Full Stack Development Course",
+    Position: "Computer Science Tutoring",
     Company: "University of Helsinki",
     Location: "Online",
     Type: "Online",
-    Duration: "Jun 2023 - Sep 2023",
-    Link: "https://www.linkedin.com/school/university-of-helsinki/",
+    Duration: "April 2025 - Current",
     Logo: helsinkiLogo,
     Contributions: [
-      "Developed and deployed a connected full-stack application, showcasing the integration of front-end and back-end technologies.",
-      "Completed 10-12 assignments focused on different parts of MERN Stack, demonstrating proficiency in building full-stack applications",
-      "Acquired a comprehensive understanding of web development fundamentals with 4 in-depth modules."
+      "Learned programming fundamentals, object-oriented programming and currently learning about databases (following the syllabus of FAST NUCES",
+      "Completed assignments of each module and went over them with a tutor from the FAST University",
     ]
   },
   {
@@ -418,6 +305,6 @@ export const projectDetails = [
 
 // Enter your Contact Details here
 export const contactDetails = {
-  email: "abdullahaak06@gmail.com",
-  phone: "+92 331 4160816",
+  email: "ibrahimahmad77977@gmail.com",
+  phone: "+92 335 7797796",
 };

@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 function Work({ position, company, location, type, duration, link, logo, transcript, contributions, extraImageDetails }) {
 
-  console.log('These r contirbutinso: ', extraImageDetails)
-  const [showMoreStatus, setShowMoreStatus] = useState(false)
+  console.log('These are contributions: ', extraImageDetails)
+  const [setShowMoreStatus] = useState(false)
 
   const showMore = () => {
     setShowMoreStatus(true)
@@ -29,7 +29,7 @@ function Work({ position, company, location, type, duration, link, logo, transcr
     >
 
       <div className="flex justify-start gap-4 accordion-toggle">
-        <img src={logo} className="w-16 h-16 border-2 ml-4"></img>
+        <img src={logo} alt="" className="w-16 h-16 border-2 ml-4"></img>
         <div className="w-full">
           <div className="flex justify-between items-center">
             <h1 className="text-content md:text-lg lg:text-xl">{position}</h1>
@@ -74,7 +74,6 @@ function Work({ position, company, location, type, duration, link, logo, transcr
               </div>
             </div>
 
-            {/* TODO: the space is not aligned here! */}
             {transcript != null ? (
               <button
                 onClick={downloadTranscript}
@@ -109,7 +108,7 @@ function Work({ position, company, location, type, duration, link, logo, transcr
           {extraImageDetails != null && (
             <div className="flex justify-start mt-4 ml-6 gap-4">
               <div className="w-[208px] h-28 rounded-lg overflow-hidden">
-                <img src={extraImageDetails.image}></img>
+                <img src={extraImageDetails.image} alt=""></img>
               </div>
               <div className="text-[14px]">
                 <h4 className="font-semibold">{extraImageDetails?.title}</h4>
