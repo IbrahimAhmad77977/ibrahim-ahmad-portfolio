@@ -1,6 +1,6 @@
 import React from "react";
 import Work from "../Components/Work";
-import { personalDetails, eduDetails } from "../Details";
+import { personalDetails, eduDetails, interests } from "../Details";
 
 function About() {
   return (
@@ -35,6 +35,50 @@ function About() {
           ))
         )}
       </section>
+            {/* Interests Section */}
+      <section>
+  <h1 className="text-2xl pt-10 text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold mb-6">
+    Interests
+  </h1>
+  <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2">
+    {React.Children.toArray(
+      interests.map(({ Title, Platforms, Stats, Frequency, Activities }) => (
+        <div className="bg-white dark:bg-dark-card rounded-2xl shadow-md p-6 transition hover:shadow-lg border dark:border-neutral-800">
+          <h2 className="text-xl font-bold text-dark-heading dark:text-light-heading mb-2">
+            {Title}
+          </h2>
+
+          {Platforms && (
+            <p className="text-content text-sm mb-1">
+              <span className="font-medium">Platforms:</span> {Platforms.join(", ")}
+            </p>
+          )}
+
+          {Frequency && (
+            <p className="text-content text-sm mb-1">
+              <span className="font-medium">Frequency:</span> {Frequency}
+            </p>
+          )}
+
+          {Stats && (
+            <p className="text-content text-sm mb-1">
+              <span className="font-medium">Community Size:</span>{" "}
+              Discord: {Stats.DiscordMembers}, Subreddit: {Stats.SubredditSubscribers}
+            </p>
+          )}
+
+          <ul className="list-disc list-inside text-content text-sm mt-3 space-y-1">
+            {Activities.map((activity, index) => (
+              <li key={index}>{activity}</li>
+            ))}
+          </ul>
+        </div>
+      ))
+    )}
+  </div>
+</section>
+
+
     </main>
   );
 }

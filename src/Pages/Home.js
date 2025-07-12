@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { personalDetails } from "../Details";
 import resumePdf from '../assets/resumes/Resume - Ibrahim Ahmad - 2025.pdf';
@@ -122,9 +122,15 @@ function Home() {
 
       </div>
 
-      <div className="mt-5 md:mt-0">
-        <img ref={myimageref} className="w-3/4 md:ml-auto rounded-full border-2" src={img} alt="Ibrahim Ahmad" />
-      </div>
+     <div className="mt-5 md:mt-0 flex justify-center md:justify-end">
+  <img
+    ref={myimageref}
+    className="w-40 sm:w-48 md:w-56 lg:w-64 rounded-full border-2"
+    src={img}
+    alt="Ibrahim Ahmad"
+  />
+</div>
+
     </main>
   );
 }

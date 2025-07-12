@@ -16,7 +16,10 @@ function Technologies() {
     sveltekit,
     ts,
     notion,
-    vercel
+    vercel,
+    SQLite,
+    C,
+    CPP,
   } = techStackDetails;
 
   const iconContainerStyle = "transition duration-200 hover:scale-110"
@@ -118,6 +121,20 @@ function Technologies() {
           <Tooltip id="github-tooltip" />
         </div>
 
+           <div className={iconContainerStyle}>
+          <img src={C} alt="C logo" data-tooltip-id="C-tooltip" data-tooltip-place="bottom" data-tooltip-content="C" />
+          <Tooltip id="C-tooltip" />
+        </div>
+
+   <div className={iconContainerStyle}>
+          <img src={CPP} alt="C++ logo" data-tooltip-id="C++-tooltip" data-tooltip-place="bottom" data-tooltip-content="C++" />
+          <Tooltip id="C++-tooltip" />
+        </div>
+
+           <div className={iconContainerStyle}>
+          <img src={SQLite} alt="SQLite logo" data-tooltip-id="SQLite-tooltip" data-tooltip-place="bottom" data-tooltip-content="SQLite" />
+          <Tooltip id="SQLite-tooltip" />
+        </div>
       
       </section>
 

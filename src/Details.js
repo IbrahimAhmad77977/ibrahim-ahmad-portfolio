@@ -1,77 +1,42 @@
 // Enter all your detials in this file
-// Logo images
-import logogradient from "./assets/logos/aak_tech_logo_light.png";
-import logo from "./assets/logos/aak_tech_logo_light.png";
+
 // Profile Image
 import profile from "./assets/profile.jpg";
 // Tech stack images
 import html from "./assets/techstack/html.png";
 import css from "./assets/techstack/css.png";
-import sass from "./assets/techstack/sass.png";
 import js from "./assets/techstack/js.png";
 import react from "./assets/techstack/react.png";
-import redux from "./assets/techstack/redux.png";
 import tailwind from "./assets/techstack/tailwind.png";
 import bootstrap from "./assets/techstack/bootstrap.png";
-import vscode from "./assets/techstack/vscode.png";
 import github from "./assets/techstack/github.png";
 import git from "./assets/techstack/git.png";
-import npm from "./assets/techstack/npm.png";
-import postman from "./assets/techstack/postman.png";
-import figma from "./assets/techstack/figma.png";
+import C from "./assets/techstack/c.png";
+import CPP from "./assets/techstack/cpp.png";
+import SQLite from "./assets/techstack/sqlite.png";
 
-import rails from "./assets/techstack/rails.png"
-import express from "./assets/techstack/express.png"
-import nodejs from "./assets/techstack/nodejs.jpg"
-import php from "./assets/techstack/php.jpg"
-import python from "./assets/techstack/python.jpg"
-import mysql from "./assets/techstack/mysql.png"
-import postgresql from "./assets/techstack/postgresql.png"
+
 import supabase from "./assets/techstack/supabase.png"
-import sql from "./assets/techstack/sql.jpg"
 
 import sveltekit from "./assets/techstack/sveltekit.png"
-import jquery from "./assets/techstack/jquery.svg"
 
 import ts from "./assets/techstack/ts.png"
-import gitkraken from "./assets/techstack/gitkraken.png"
 
-import aws from "./assets/techstack/aws.png"
-import redis from "./assets/techstack/redis.png"
-import daisyui from "./assets/techstack/daisyui.png"
-import stripe from "./assets/techstack/stripe.png"
-import newrelic from "./assets/techstack/newrelic.png"
-import jira from "./assets/techstack/jira.png"
 import notion from "./assets/techstack/notion.png"
 import vercel from "./assets/techstack/vercel.svg"
 
 // Porject Images
-import projectImage3 from "./assets/projects/project3.jpg";
 
+import ChatApp from "./assets/projects/chat-app.png"
+import ChessApp from "./assets/projects/chess-app.webp"
+import DeltaTestApp from "./assets/projects/delta-test-app.png"
 
-import dropellaProjectImage from "./assets/projects/dropellaImage.jpg"
-import lumsafarProjectImage from "./assets/projects/lumsafarImage.png"
-import a5bcProjectImage from "./assets/projects/a5bcImage.png"
-import hyndburnPantryProjectImage from "./assets/projects/hyndburnPantryImage.png"
-import innerLahoreProjectImage from "./assets/projects/innerLahoreImage.png"
-import abdulBasitPawarPortfolioImage from "./assets/projects/basitPortfolioImage.png"
-// import softwareHouseProjectImage from "./assets/projects/softwareHouseImage"
-import highwayRacersProjectImage from "./assets/projects/highwayRacersImage.jpg"
-import breakoutsAndSetupsProjectImage from "./assets/projects/breakoutSetupsImage.png"
 
 // Education images
-import datacampLogo from "./assets/education/datacamp-logo.png"
 import helsinkiLogo from "./assets/education/helsinki-logo.png"
-import lumsLogo from "./assets/education/lums-logo.jpg"
-
-// Transcripts
-import transcript from "./assets/transcripts/Abdullah Ahmad's Transcript.pdf"
-
-// Logos
-export const logos = {
-  logogradient: logogradient,
-  logo: logo,
-};
+import fastUniversityLogo from "./assets/education/fast-university-logo.png"
+import havardUniversityLogo from "./assets/education/harvard-university-logo.png"
+import lahoreSchoolOfLearningLogo from "./assets/education/lahore-school-of-learning-logo.png"
 
 // Enter your Personal Details here
 export const personalDetails = {
@@ -97,7 +62,7 @@ export const eduDetails = [
     Type: "Online",
     Duration: "June 2025 – Current",
     Link: "https://fullstackopen.com/en/",
-    Logo: datacampLogo,
+    Logo: helsinkiLogo,
     Contributions: [
       "Learned about Fundamentals of Web Apps",
       "Currently learning about the fundamentals of React, such as state and hooks",
@@ -105,32 +70,77 @@ export const eduDetails = [
   },
   {
     Position: "Computer Science Tutoring",
-    Company: "University of Helsinki",
+    Company: "FAST University",
     Location: "Online",
     Type: "Online",
     Duration: "April 2025 - Current",
-    Logo: helsinkiLogo,
+    Link: "https://www.nu.edu.pk/",
+    Logo: fastUniversityLogo,
     Contributions: [
       "Learned programming fundamentals, object-oriented programming and currently learning about databases (following the syllabus of FAST NUCES",
       "Completed assignments of each module and went over them with a tutor from the FAST University",
     ]
   },
   {
-    Position: "Bachelor of Science in Computer Science",
-    Company: `Lahore University of Management Sciences`,
-    Location: "Lahore, Pakistan",
-    Type: "Full Time",
-    Duration: "Aug 2019 - Jun 2023",
-    Link: "https://www.linkedin.com/school/lahore-university-of-management-sciences/",
-    Logo: lumsLogo,
-    Transcript: transcript,
+    Position: "Harvard's CS50 Course",
+    Company: `Harvard University`,
+    Location: "Cambridge, United Kingdom",
+    Type: "Online",
+    Duration: "Aug 2024 - Dec 2024",
+    Link: "https://drive.google.com/file/d/1guENL1y0pUt1qSndHVFrpNGchZjvpFHq/view?usp=drive_link",
+    Logo: havardUniversityLogo,
     Contributions: [
-      "Led a team of five developers to build an Android-based endless runner game, Highway Racers, as my Final Year Project.",
-      "Developed LUMSafar, a university socializing app, during my Software Engineering course.",
-      "Completed courses in AI, Machine Learning, and Data Science, delivering projects for each and demonstrating a solid understanding of their concepts.",
-      "Participated in the university badminton team for three years, winning two medals in internal tournaments and competing with other universities.",
+      "Studied a vast amount of modules, such as C, Algorithms, Data Structures, Basic Web Development, Cybersecurity",
+      "Made a finance website which could track your finances for the final project",
+      " Completed assignments for the modules"
     ]
   },
+  {
+    Position: "O-Level Education",
+    Company: `Lahore School of Learning`,
+    Location: "Lahore, Pakistan",
+    Type: "In-person",
+    Duration: "Nov 2013 - Sep 2024",
+    Link: "https://lsl.edu.pk/",
+    Logo: lahoreSchoolOfLearningLogo,
+    Contributions: [
+      "Scored 4 A’s and 4 B’s in CAIE O-Level exams (Science Stream)"
+    ]
+  },
+];
+
+export const interests = [
+  {
+    Title: "Chess Enthusiast",
+    Platforms: ["Chess.com", "Lichess.org"],
+    Activities: [
+      "Play daily correspondence games on Chess.com and Lichess",
+      "Analyze completed games to identify strengths and weaknesses",
+      "Solve chess puzzles to sharpen tactical vision",
+      "Study openings, endgames, and strategic concepts",
+      "Participate in collaborative vote chess games"
+    ]
+  },
+  {
+    Title: "Fitness & Gym",
+    Frequency: "Monday–Friday",
+    Activities: [
+      "Follow a consistent gym routine focusing on cardio and strength training",
+    ]
+  },
+  {
+    Title: "Community Moderator",
+    Platforms: ["Among Us Discord", "r/AmongUs Subreddit"],
+    Stats: {
+      DiscordMembers: "549k+",
+      SubredditSubscribers: "594k+"
+    },
+    Activities: [
+      "Moderate discussions and enforce community guidelines",
+      "Support and assist community members",
+      "Handles reports"
+    ]
+  }
 ];
 
 // Tech Stack and Tools
@@ -139,166 +149,58 @@ export const techStackDetails = {
   css: css,
   js: js,
   react: react,
-  redux: redux,
-  sass: sass,
   tailwind: tailwind,
   bootstrap: bootstrap,
-  vscode: vscode,
-  postman: postman,
-  npm: npm,
   git: git,
   github: github,
-  figma: figma,
-  rails: rails,
-  nodejs: nodejs,
-  express: express,
-  php: php,
-  python: python,
-  mysql: mysql,
-  postgresql: postgresql,
   supabase: supabase,
-  sql: sql,
   sveltekit: sveltekit,
-  jquery: jquery,
   ts: ts,
-  gitkraken: gitkraken,
-  aws: aws,
-  redis: redis,
-  daisyui: daisyui,
-  newrelic: newrelic,
-  stripe: stripe,
-  jira: jira,
   notion: notion,
-  vercel: vercel
+  vercel: vercel,
+  SQLite: SQLite,
+  C: C,
+  CPP: CPP
 };
 
 // Enter your Project Details here
 export const projectDetails = [
   {
-    title: "Dropella",
-    image: dropellaProjectImage,
-    description: `A web app built to faciliate e-commerce specialists by providing them precise analytical tools.`,
-    techstack: "SvelteKit, Svelte, TypeScript, JavaScript, Supabase, Stripe, Tailwind CSS",
-    previewLink: "https://dropella.vercel.app",
+    title: "Chat App",
+    image: ChatApp, // Replace with image if available
+    description: "A real-time chat application with user authentication and profile management.",
+    techstack: "SvelteKit, Supabase",
+    previewLink: "https://lnkd.in/geAYDguf",
+    githubLink: "https://github.com/IbrahimAhmad77977/ibi-chat",
+    contributions: [
+      "Implemented realtime chat functionality using Supabase’s web sockets",
+      "Implemented authentication using in-built JWT-based supabase mechanism",
+      "Implemented user profile details module, allowing them to change information related to their user"
+    ]
+  },
+  {
+    title: "Chess App",
+    image: ChessApp, // Replace with image if available
+    description: "A multiplayer chess platform with move tracking and FEN synchronization.",
+    techstack: "SvelteKit, Supabase, Chess.js",
+    previewLink: "https://lnkd.in/g2AD-pKm",
+    githubLink: "https://github.com/IbrahimAhmad77977/chess-app",
+    contributions: [
+      "Integrated the chess.js library to build a platform supporting games between authenticated users",
+      "Synced the states of different games to Supabase database using FEN notation",
+      "Implemented a game-wise moves’ tracking feature"
+    ]
+  },
+  {
+    title: "DeltaTest",
+    image: DeltaTestApp, // Replace with image if available
+    description: "Web app to test and demo mobile apps in the browser.",
+    techstack: "Next.js, Supabase",
+    previewLink: "https://lookatmyapp-web-vert.vercel.app/",
     githubLink: null,
     contributions: [
-      'Successfully launched the 1st build of Dropella, delivering a functional app and ensuring resolution of all bugs.',
-      'Led and mentored 10 front-end developers, fostering collaboration with designers and back-end developers to deliver efficient and cohesive project development.',
-      'Enhanced customer conversion rates by 30% by implementing paid one-day trial periods before subscriptioncommitments in Stripe.',
-      'Integrated 25+ products, stores, and ads APIs, ensuring precise real-time analytics and enhancing overall app functionality.',
-      "Integrated OpenAI's ChatGPT-3M6 to provide intelligent data insights, where API data was insufficient, leading to a more fulfilling user experience.",
-      'Utilized Tailwind and Daisy UI to craft a pixel-perfect, responsive UI, achieving a 95% Figma design fidelity for a user-friendly app interface.',
-      'Implemented internal store tracking for sales’ listings and details pages, maintaining data integrity and accuracy per client requirements.'
-    ]
-  },
-
-  {
-    title: "Breakouts and Setups",
-    image: breakoutsAndSetupsProjectImage,
-    description: `A web app built to guide those interested in stocks, by providing in-depth analysis with real-time market conditions.`,
-    techstack: "Node.js, MongoDB, React.js, Firebase, Stripe, Tailwind CSS",
-    previewLink: "https://dashboard.breakoutsandsetups.com",
-    githubLink: null,
-    contributions: [
-      'Developed a custom emailing system for admins with Firebase, enabling them to efficiently communicate with premium users, enhancing user engagement.',
-      'Enhanced user experience by implementing 8 additional UI sections and a drag-and-drop feature, allowing users to easily add tickers to watchlists, increasing platform interactivity',
-      "Implemented customizable timeframe-based layouts, enabling users to dynamically toggle and control the visibility of various data elements for each timeframe"
-    ]
-  },
-  
-  {
-    title: "LUMSafar",
-    image: lumsafarProjectImage,
-    description: `A mobile app built to faciliate socializing between students of Lahore University of Management Sciences.`,
-    techstack: "React Native, TypeScript, JavaScript, Node.js, MongoDB",
-    previewLink: null,
-    githubLink: "https://github.com/AhsanSarwar45/LUMSafar",
-    contributions: [
-      "Developed the backend for the user profile module and related features.",
-      "Majorly worked in documenting proposal document, SRS, and SDS.",
-      "Conducted usability testing of the app."
-    ]
-  },
-
-  {
-    title: "Inner Lahore Tour Guide",
-    image: innerLahoreProjectImage,
-    description: `An informatory tour guide web app, built with an interactive map to generate plans for tourists.`,
-    techstack: "React.js, Tailwind",
-    previewLink: "abdulbasitpawar.com",
-    githubLink: null,
-    contributions: [
-      "Delivered a functional app that suggests randomized, sensible tour plans to tourists.",
-      "Ensured an attractive and aesthetic user interface.",
-    ]
-  },
-
-  {
-    title: "Abdul Basit Pawar's Portfolio",
-    image: abdulBasitPawarPortfolioImage,
-    description: `A portfolio for a Math tutor, offering classes online to an international audience.`,
-    techstack: "SvelteKit",
-    previewLink: "https://www.abdulbasitpawar.com/",
-    githubLink: null,
-    contributions: [
-      "Collaborated closely with the client to design and develop the website.",
-      "Managed deployment and hosting of the website.",
-    ]
-  },
-  
-  {
-    title: "Hyndburn Pantry Management System",
-    image: hyndburnPantryProjectImage,
-    description: `An admin panel built to manage customers and employees of the Hyndburn Pantry (U.K.).`,
-    techstack: "React.js, Node.js, Express, MongoDB, Tailwind",
-    previewLink: "https://app.hyndburnfoodpantry.co.uk",
-    githubLink: null,
-    contributions: [
-      "Integrated reading of customers' RFID cards into the system",
-      "Revamped the old app with a new UI.",
-      "Developed user management feature and customer reports feature in "
-    ]
-  },
-
-  {
-    title: "Askari 5 Badminton Club",
-    image: a5bcProjectImage,
-    description: `A passion project and a web app, built to showcase Askari 5 Badminton Club's (Lahore) details.`,
-    techstack: "HTML, CSS, JavaScript, SASS",
-    previewLink: "https://askari-5-badminton-club.vercel.app/",
-    githubLink: "https://github.com/AbdullahAhmadAAK/a5bc-club",
-    contributions: [
-      "Showcased relevant information for the club in a page, customizing another template.",
-      "Made the template responsive and unique so that it would look better for a badminton club's website."
-    ]
-  },
-
-  {
-    title: "Software House Management System",
-    image: projectImage3,
-    description: `A purely functional web app built to help a software house manage everything within it, including projects, employees and tasks.`,
-    techstack: "React.js, Express, Node.js, MySQL",
-    previewLink: null,
-    githubLink: "https://github.com/raffayatiq/Software-House-Management-System",
-    contributions: [
-      "Developed frontend and backend for login, privilege levels, creating employee reviews and viewing employees' data.",
-
-    ]
-  },
-
-  {
-    title: "Highway Racers",
-    image: highwayRacersProjectImage,
-    description: `An Android-based endless runner game, in which the rider has to avoid obstacles, collect coins and just keep riding until his bike is destroyed by collisions.`,
-    techstack: "Unity 3D, C#",
-    previewLink: null,
-    githubLink: "https://github.com/ammantariq41/p01-highway_racers_2",
-    contributions: [
-      "Led and managed a team of 5 developers, delegating tasks and ensuring team cohesion.",
-      "Developed various game features in it,such as infinite path generation, bike movement and bike aesthetics.",
-      "Contributed to the game's UI by creating aesthetic start and end screens.",
-      "Wrote and maintained 80%+ of the documentation.",
-      "Researched into game development resources - “The Art of Game Design” and a game development YouTube playlist by Mindstorm Studios."
+      "Built the UI of 10 pages with Tailwind CSS 3.4.1",
+      "Carried out refactoring tasks as per the lead developer’s instructions throughout the codebase"
     ]
   }
 ];
