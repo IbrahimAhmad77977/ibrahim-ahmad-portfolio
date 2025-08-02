@@ -1,7 +1,7 @@
 // Enter all your detials in this file
 
 // Profile Image
-import profile from "./assets/profile.jpg";
+import profile from "./assets/profile.png";
 // Tech stack images
 import html from "./assets/techstack/html.png";
 import css from "./assets/techstack/css.png";
@@ -11,9 +11,6 @@ import tailwind from "./assets/techstack/tailwind.png";
 import bootstrap from "./assets/techstack/bootstrap.png";
 import github from "./assets/techstack/github.png";
 import git from "./assets/techstack/git.png";
-import C from "./assets/techstack/c.png";
-import CPP from "./assets/techstack/cpp.png";
-import SQLite from "./assets/techstack/sqlite.png";
 
 
 import supabase from "./assets/techstack/supabase.png"
@@ -23,7 +20,6 @@ import sveltekit from "./assets/techstack/sveltekit.png"
 import ts from "./assets/techstack/ts.png"
 
 import notion from "./assets/techstack/notion.png"
-import vercel from "./assets/techstack/vercel.svg"
 
 // Porject Images
 
@@ -112,7 +108,10 @@ export const eduDetails = [
 export const interests = [
   {
     Title: "Chess Enthusiast",
-    Platforms: ["Chess.com", "Lichess.org"],
+    Platforms: [
+      { name: "Chess.com", link: "https://www.chess.com" },
+      { name: "Lichess.org", link: "https://lichess.org" }
+    ],
     Activities: [
       "Play daily correspondence games on Chess.com and Lichess",
       "Analyze completed games to identify strengths and weaknesses",
@@ -122,15 +121,11 @@ export const interests = [
     ]
   },
   {
-    Title: "Fitness & Gym",
-    Frequency: "Monday–Friday",
-    Activities: [
-      "Follow a consistent gym routine focusing on cardio and strength training",
-    ]
-  },
-  {
     Title: "Community Moderator",
-    Platforms: ["Among Us Discord", "r/AmongUs Subreddit"],
+    Platforms: [
+      { name: "Among Us Discord", link: "https://discord.gg/innersloth" },
+      { name: "r/AmongUs Subreddit", link: "https://www.reddit.com/r/AmongUs/" }
+    ],
     Stats: {
       DiscordMembers: "549k+",
       SubredditSubscribers: "594k+"
@@ -157,10 +152,6 @@ export const techStackDetails = {
   sveltekit: sveltekit,
   ts: ts,
   notion: notion,
-  vercel: vercel,
-  SQLite: SQLite,
-  C: C,
-  CPP: CPP
 };
 
 // Enter your Project Details here

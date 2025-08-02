@@ -6,17 +6,17 @@ function About() {
   return (
     <main className="container mx-auto max-width pt-10 pb-20 ">
       <section>
-        <h1 className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
+        <h1 className="text-center lg:text-left text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
           About Me
         </h1>
-        <p className="text-content py-8 lg:max-w-3xl">{personalDetails.about}</p>
+        <p className="text-center lg:text-left text-content py-8 lg:max-w-3xl">{personalDetails.about}</p>
       </section>
       <section>
 
    
       </section>
       <section>
-        <h1 className="text-2xl pt-10 text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
+        <h1 className="text-center lg:text-left text-2xl pt-10 text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
           Education
         </h1>
         {React.Children.toArray(
@@ -37,7 +37,7 @@ function About() {
       </section>
             {/* Interests Section */}
       <section>
-  <h1 className="text-2xl pt-10 text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold mb-6">
+  <h1 className="text-center lg:text-left text-2xl pt-10 text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold mb-6">
     Interests
   </h1>
   <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2">
@@ -48,11 +48,25 @@ function About() {
             {Title}
           </h2>
 
-          {Platforms && (
-            <p className="text-content text-sm mb-1">
-              <span className="font-medium">Platforms:</span> {Platforms.join(", ")}
-            </p>
-          )}
+    {Platforms && (
+  <p className="text-content text-sm mb-1">
+    <span className="font-medium">Platforms:</span>{" "}
+    {Platforms.map((p, i) => (
+      <span key={i}>
+        <a
+          href={p.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 dark:text-blue-400 underline hover:text-orange-500 transition-colors"
+        >
+          {p.name}
+        </a>
+        {i < Platforms.length - 1 ? ", " : ""}
+      </span>
+    ))}
+  </p>
+)}
+
 
           {Frequency && (
             <p className="text-content text-sm mb-1">
